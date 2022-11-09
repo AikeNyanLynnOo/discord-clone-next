@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Discord Clone By a1k3</title>
         <meta name="description" content="Created by a1k3" />
-        <link rel="icon" href="/discord.png" />
+        <link rel="icon" href="/discord-transparent.png" />
       </Head>
       <Navigation />
       <main className={`${styles.xLargeFont}`}>Hello world</main>
