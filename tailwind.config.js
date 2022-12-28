@@ -8,5 +8,11 @@ module.exports = {
     "./public/**/*.html",
   ],
   plugins: [],
-  theme: {},
+  theme: {
+    extend: {
+      width: {
+        1000: "300rem",
+      },
+    },
+  },
 };

@@ -5,13 +5,6 @@ import NavStyles from "../styles/Navigation.module.css";
 
 const navItems = [
   {
-    text: "Home",
-    link: "/",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
     text: "Download",
     link: "/download",
     subNav: false,
@@ -51,21 +44,21 @@ const navItems = [
     link: "/support",
     subNav: false,
     smallNav: true,
-    largeNav: false,
+    largeNav: true,
   },
   {
     text: "Blog",
     link: "/blog",
     subNav: false,
     smallNav: true,
-    largeNav: false,
+    largeNav: true,
   },
   {
     text: "Careers",
     link: "/careers",
     subNav: false,
     smallNav: true,
-    largeNav: false,
+    largeNav: true,
   },
 ];
 
@@ -128,9 +121,9 @@ const moderatorAcademyData = [
 
 const ButtonGroup = () => {
   return (
-    <div className="absolute bottom-6 z-10 flex justify-between items-center w-fit">
+    <div className="absolute bottom-6 z-20 flex justify-between items-center w-fit">
       <button className="px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
-        <img src="/download.png" className=" w-4 h-4 mr-3" />
+        <img src="/images/download-white.png" className=" w-4 h-4 mr-3" />
         Download for Linux
       </button>
       <button className="border-solid border border-[#5865f2] rounded-full ml-2 px-7 py-2 text-sm normal-font text-[#5865f2] block sm:hidden">
@@ -147,8 +140,8 @@ export const Navigation = () => {
   const [currentSubNav, setCurrentSubNav] = useState("Safety");
 
   useEffect(() => {
-    console.log("Slide " + isSlideOpen);
-    console.log("SubSlide " + isSubSlideOpen);
+    // console.log("Slide " + isSlideOpen);
+    // console.log("SubSlide " + isSubSlideOpen);
   });
 
   const closeAll = () => {
@@ -169,49 +162,50 @@ export const Navigation = () => {
       setIsSubSlideOpen((prev) => !prev);
   };
   return (
-    <nav
-      className={`${NavStyles.nav} w-full px-10 py-6 flex items-center justify-between`}
-    >
-      <div className="flex items-center w-1/4 justify-start">
-        <img src="/discord.png" className="inline mr-4 w-8 h-8" />
-        <h1 className="x-large-font inline uppercase text-white">Discord</h1>
-      </div>
-      <ul className="normal-font w-2/4 hidden lg:flex justify-between items-center text-white font-semibold">
-        {navItems
-          .filter((item) => item.largeNav)
-          .map((navItem, index) => (
-            <li key={index}>
-              <Link href={navItem.link}>{navItem.text}</Link>
-            </li>
-          ))}
-      </ul>
-      <div className="flex items-center w-1/4 justify-end">
-        <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
-          Login
-        </button>
-        <img
-          src="/lines.png"
-          className="inline lg:hidden ml-4 w-7 h-7 cursor-pointer"
-          onClick={() => {
-            toggleSlideNav();
-          }}
-        />
+    <nav>
+      <div className="bg-[#404eed] w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20">
+        <Link href="/" className="flex items-center w-1/4 justify-start">
+          <img src="/images/discord.png" className="inline mr-4 w-8 h-8" />
+          <h1 className="x-large-font inline text-white">Discord</h1>
+        </Link>
+        <ul className="normal-font w-2/4 hidden lg:flex justify-between items-center text-white font-semibold">
+          {navItems
+            .filter((item) => item.largeNav)
+            .map((navItem, index) => (
+              <li key={index}>
+                <Link href={navItem.link}>{navItem.text}</Link>
+              </li>
+            ))}
+        </ul>
+        <div className="flex items-center w-1/4 justify-end">
+          <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
+            Login
+          </button>
+          <img
+            src="/images/lines.png"
+            className="inline lg:hidden ml-4 w-7 h-7 cursor-pointer"
+            onClick={() => {
+              toggleSlideNav();
+            }}
+          />
+        </div>
       </div>
       <div
-        className={`h-full w-full md:w-4/12  bg-white rounded-l-md absolute z-10 right-0 ${
+        className={`h-auto w-full md:w-4/12  bg-white rounded-l-md fixed z-30 right-0 top-0 bottom-0 ${
           isSlideOpen ? "block" : "hidden"
         } top-0`}
       >
         <div className="flex justify-between mx-6">
           <div className="w-11/12 ">
-            <div className="border-b py-6">
-              <img src="/discord-black.png" className="inline mr-4 w-8 h-8" />
-              <h1 className="x-large-font inline uppercase text-[#23272a]">
-                Discord
-              </h1>
-            </div>
+            <Link href="/" className="border-b py-6 flex items-center">
+              <img
+                src="/images/discord-black.png"
+                className="inline mr-4 w-8 h-8"
+              />
+              <h1 className="x-large-font inline text-[#23272a]">Discord</h1>
+            </Link>
             <ul
-              className={`py-4 ${NavStyles.ulMaxHeight} overflow-y-scroll scrollbar-hide`}
+              className={`py-4 ${NavStyles.ulMaxHeight} overflow-y-scroll scrollbar-hide bg-white`}
             >
               {navItems
                 .filter((item) => item.smallNav)
@@ -237,7 +231,7 @@ export const Navigation = () => {
                         {navItem.text}
                         {navItem.subNav && (
                           <img
-                            src="/caret-r.png"
+                            src="/images/caret-r.png"
                             className="inline w-3 h-3 ml-3"
                           />
                         )}
@@ -249,7 +243,7 @@ export const Navigation = () => {
             <ButtonGroup />
           </div>
           <img
-            src="/close.png"
+            src="/images/close.png"
             className="w-4 h-4 mt-7 cursor-pointer"
             onClick={closeAll}
           />
@@ -257,7 +251,7 @@ export const Navigation = () => {
       </div>
       {isSubSlideOpen && (
         <div
-          className={`h-full w-full md:w-4/12  bg-white rounded-l-md absolute z-12 right-0 top-0`}
+          className={`h-full w-full md:w-4/12  bg-white rounded-l-md fixed z-30 right-0 top-0`}
         >
           <div className="flex justify-between mx-6">
             <div className="w-11/12 ">
@@ -268,13 +262,16 @@ export const Navigation = () => {
                   toggleSlideNav(true);
                 }}
               >
-                <img src="/caret-l.png" className="inline mr-2 w-3 h-3" />
+                <img
+                  src="/images/caret-l.png"
+                  className="inline mr-2 w-3 h-3"
+                />
                 <h1 className="inline font-light text-sm py-3 my-2 rounded-md hover:underline">
                   Back
                 </h1>
               </div>
               <ul
-                className={`py-4 ${NavStyles.ulMaxHeight} overflow-y-scroll scrollbar-hide`}
+                className={`py-4 ${NavStyles.ulMaxHeight} bg-white overflow-y-scroll scrollbar-hide`}
               >
                 {(currentSubNav === "Safety" &&
                   safetySubData.map((data, index) => (
@@ -311,7 +308,7 @@ export const Navigation = () => {
               <ButtonGroup />
             </div>
             <img
-              src="/close.png"
+              src="/images/close.png"
               className="w-4 h-4 mt-7 cursor-pointer"
               onClick={closeAll}
             />

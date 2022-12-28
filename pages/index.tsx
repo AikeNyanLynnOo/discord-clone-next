@@ -1,18 +1,37 @@
-import Head from "next/head";
-import Image from "next/image";
+import { PageHead } from "../components/PageHead";
+import { FlexContent } from "../components/FlexContentComponent";
+import { HeroSection } from "../components/HeroSectionComponent";
 import { Navigation } from "../components/Navigation";
-import styles from "../styles/Home.module.css";
+import { Footer } from "../components/FooterComponent";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedCountry, setSelectedCountry] = useState(0);
+  const [isSelectOpen, setIsSelectOpen] = useState(false);
+
+  const toggleSelectBox = () => {
+    console.log("toggling");
+    setIsSelectOpen((prev) => !prev);
+  };
   return (
-    <div>
-      <Head>
-        <title>Discord Clone By a1k3</title>
-        <meta name="description" content="Created by a1k3" />
-        <link rel="icon" href="/discord-transparent.png" />
-      </Head>
+    <div
+      onClick={() => {
+        if (isSelectOpen) {
+          setIsSelectOpen(false);
+        }
+      }}
+    >
+      <PageHead pageTitle="Discord Clone By a1k3" />
       <Navigation />
-      <main className={`${styles.xLargeFont}`}>Hello world</main>
+      <HeroSection />
+      <FlexContent />
+      <Footer
+        selectedCountry={selectedCountry}
+        setSelectedCountry={setSelectedCountry}
+        isSelectOpen={isSelectOpen}
+        setIsSelectOpen={setIsSelectOpen}
+        toggleSelectBox={toggleSelectBox}
+      />
     </div>
   );
 }

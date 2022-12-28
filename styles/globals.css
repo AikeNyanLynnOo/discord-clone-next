@@ -23,3 +23,8 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.country-1 {
+  background-image: url(/images/countries/1.png);
+  background-color: red;
+}
