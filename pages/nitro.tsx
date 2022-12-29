@@ -1,6 +1,5 @@
 import { PageHead } from "../components/shared/PageHead";
-import { HomeContentWrapper } from "../components/Home/ContentComponent";
-import { HeroSection } from "../components/Home/HeroSectionComponent";
+import { HeroSection } from "../components/Nitro/HeroSectionComponent";
 import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
@@ -21,10 +20,10 @@ export default function Home() {
         }
       }}
     >
-      <PageHead pageTitle="Discord Clone By a1k3" />
-      <Navigation navBgColor={"#404eed"} />
+      <PageHead pageTitle="Nitro Benefits and Features | Discord" />
+      <Navigation navBgColor={"#BB87F4"} />
       <HeroSection />
-      <HomeContentWrapper />
+      <div className="bg-gray-100 h-screen"></div>
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import NavStyles from "../styles/Navigation.module.css";
+import NavStyles from "../../styles/Navigation.module.css";
 
 const navItems = [
   {
@@ -133,7 +133,7 @@ const ButtonGroup = () => {
   );
 };
 
-export const Navigation = () => {
+export const Navigation = (props: any) => {
   const router = useRouter();
   const [isSlideOpen, setIsSlideOpen] = useState(false);
   const [isSubSlideOpen, setIsSubSlideOpen] = useState(false);
@@ -163,7 +163,9 @@ export const Navigation = () => {
   };
   return (
     <nav>
-      <div className="bg-[#404eed] w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20">
+      <div
+        className={`bg-[${props.navBgColor}] w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20`}
+      >
         <Link href="/" className="flex items-center w-1/4 justify-start">
           <img src="/images/discord.png" className="inline mr-4 w-8 h-8" />
           <h1 className="x-large-font inline text-white">Discord</h1>
