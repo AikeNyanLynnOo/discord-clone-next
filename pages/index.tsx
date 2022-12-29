@@ -1,5 +1,5 @@
 import { PageHead } from "../components/PageHead";
-import { FlexContent } from "../components/FlexContentComponent";
+import { HomeContentWrapper } from "../components/HomeContentComponent";
 import { HeroSection } from "../components/HeroSectionComponent";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/FooterComponent";
@@ -24,7 +24,7 @@ export default function Home() {
       <PageHead pageTitle="Discord Clone By a1k3" />
       <Navigation />
       <HeroSection />
-      <FlexContent />
+      <HomeContentWrapper />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

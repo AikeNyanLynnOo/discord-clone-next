@@ -129,8 +129,9 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Product</h3>
               <ul className="text-white">
-                {productLinks.map((link) => (
+                {productLinks.map((link, index) => (
                   <Link
+                    key={index}
                     className="my-2 text-sm block hover:underline"
                     href={"/"}
                   >
@@ -142,8 +143,9 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Company</h3>
               <ul className="text-white">
-                {companyLinks.map((link) => (
+                {companyLinks.map((link, index) => (
                   <Link
+                    key={index}
                     className="my-2 text-sm block hover:underline"
                     href={"/"}
                   >
@@ -155,8 +157,9 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Resources</h3>
               <ul className="text-white">
-                {resourceLinks.map((link) => (
+                {resourceLinks.map((link, index) => (
                   <Link
+                    key={index}
                     className="my-2 text-sm block hover:underline"
                     href={"/"}
                   >
@@ -168,8 +171,9 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Policies</h3>
               <ul className="text-white">
-                {policyLinks.map((link) => (
+                {policyLinks.map((link, index) => (
                   <Link
+                    key={index}
                     className="my-2 text-sm block hover:underline"
                     href={"/"}
                   >
@@ -194,6 +198,3 @@ export const Footer = (props: any) => {
     </footer>
   );
 };
-function countryList() {
-  throw new Error("Function not implemented.");
-}
