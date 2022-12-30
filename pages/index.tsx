@@ -22,7 +22,7 @@ export default function Home() {
       }}
     >
       <PageHead pageTitle="Discord Clone By a1k3" />
-      <Navigation navBgColor={"#404eed"} />
+      <Navigation currentNav={"home"} />
       <HeroSection />
       <HomeContentWrapper />
       <Footer

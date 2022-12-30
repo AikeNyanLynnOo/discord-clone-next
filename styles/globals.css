@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* navigation */
+
+.nav-home {
+  background-color: #404eed;
+}
+.nav-nitro {
+  background-color: #bb87f4;
+}
+
+/* nitro */
+.card-basic {
+  background-color: #077ac6;
+}
+.card-special {
+  background-color: #ac45c2;
+}
+
 .x-large-font {
   font-family: "Sigmar One", cursive;
 }
@@ -27,4 +44,14 @@
 .country-1 {
   background-image: url(/images/countries/1.png);
   background-color: red;
+}
+
+.nitro-mobile {
+  background: linear-gradient(#4366e0, #e38bc9);
+}
+
+@media only screen and (max-width: 767px) {
+  .nitro-mobile {
+    background-color: none;
+  }
 }

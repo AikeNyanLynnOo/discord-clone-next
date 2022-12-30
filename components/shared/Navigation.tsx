@@ -164,7 +164,7 @@ export const Navigation = (props: any) => {
   return (
     <nav>
       <div
-        className={`bg-[${props.navBgColor}] w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20`}
+        className={`nav-${props.currentNav} w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20`}
       >
         <Link href="/" className="flex items-center w-1/4 justify-start">
           <img src="/images/discord.png" className="inline mr-4 w-8 h-8" />
