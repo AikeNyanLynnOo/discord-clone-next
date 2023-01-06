@@ -174,7 +174,7 @@ export const Navigation = (props: any) => {
           {navItems
             .filter((item) => item.largeNav)
             .map((navItem, index) => (
-              <li key={index}>
+              <li key={index} className="hover:underline">
                 <Link href={navItem.link}>{navItem.text}</Link>
               </li>
             ))}

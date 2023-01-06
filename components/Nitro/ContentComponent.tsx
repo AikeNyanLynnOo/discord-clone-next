@@ -1,6 +1,6 @@
 import { ContentCard } from "./ContentCardItemComponent";
 import { PlanCard } from "./PlanCardComponent";
-import { nitroGridContents, nitroPlans } from "../shared/env";
+import { NITRO_GRID_CONTENTS, NITRO_PLANS } from "../shared/env";
 
 export const Content = () => {
   return (
@@ -9,7 +9,7 @@ export const Content = () => {
         Popular Nitro Perks
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {nitroGridContents.map((content, index) => {
+        {NITRO_GRID_CONTENTS.map((content, index) => {
           return (
             <ContentCard
               key={index}
@@ -23,7 +23,7 @@ export const Content = () => {
         Show all perks
       </button>
 
-      <PlanCard plans={nitroPlans} />
+      <PlanCard plans={NITRO_PLANS} />
     </div>
   );
 };

@@ -49,6 +49,13 @@
 .nitro-mobile {
   background: linear-gradient(#4366e0, #e38bc9);
 }
+.nitro-subscribe {
+  background: linear-gradient(
+    90deg,
+    rgba(133, 71, 198, 1) 5%,
+    rgba(174, 86, 153, 1) 100%
+  );
+}
 
 @media only screen and (max-width: 767px) {
   .nitro-mobile {

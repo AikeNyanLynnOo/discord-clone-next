@@ -8,7 +8,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
       </h3>
       <div className="mb-14">
         <div className="flex justify-between items-start w-11/12 mx-auto border-b border-[#ddd] py-0">
-          <span className="w-1/3 md:w-2/3 text-left font-bold py-6">
+          <span className="w-1/3 lg:w-2/3 text-left font-bold py-6">
             Features
           </span>
 
@@ -33,7 +33,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
         {props.plans.map((plan) => {
           return (
             <div className="flex justify-between items-center w-11/12 mx-auto border-b border-[#ddd]">
-              <span className="w-1/3 md:w-2/3 text-left font-light text-sm md:text-md max-h-14 overflow-y-scroll scrollbar-hide">
+              <span className="w-1/3 lg:w-2/3 text-left font-light text-sm md:text-md max-h-14 overflow-y-scroll scrollbar-hide">
                 {plan.textContent}
               </span>
 
@@ -66,7 +66,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
         })}
 
         <div className="hidden md:flex justify-between items-start w-11/12 mx-auto py-0">
-          <span className="w-1/3 md:w-2/3"></span>
+          <span className="w-1/3 lg:w-2/3"></span>
 
           <div className="flex-1 text-center py-6">
             <button className="block mx-auto text-sm px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
@@ -79,7 +79,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-2 grid-gap-4 w-11/12 mx-auto pt-10">
+        <div className="grid grid-cols-2 grid-gap-4 w-11/12 mx-auto pt-10 md:hidden">
           <div className="pt-5">
             <img src={`/images/nitro_basic_black.svg`} className="w-24" />
           </div>

@@ -1,8 +1,8 @@
-import { homeFlexContents } from "../shared/env";
+import { HOME_FLEX_CONTENTS } from "../shared/env";
 export const FlexContent = () => {
   return (
     <ul className="h-auto w-100 py-10 md:py-20">
-      {homeFlexContents.map((content, index) => (
+      {HOME_FLEX_CONTENTS.map((content, index) => (
         <li
           key={index}
           className={`block lg:flex justify-center w-full px-10 py-16 md:p-16 lg:p-20 ${
