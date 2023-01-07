@@ -14,3 +14,18 @@ export interface NitroPlan {
   basic: string;
   special: string;
 }
+
+export interface SafetySubCardContent {
+  image: string;
+  title: string;
+  catchText: string;
+}
+
+export interface SafetyContent {
+  title: string;
+  image: string;
+  bodyContents: {
+    text: string;
+  }[];
+  subCards: SafetySubCardContent[];
+}

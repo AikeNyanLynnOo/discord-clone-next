@@ -1,4 +1,9 @@
-import { NitroCardContent, NitroPlan, HomeFlexContent } from "./Types";
+import {
+  NitroCardContent,
+  NitroPlan,
+  HomeFlexContent,
+  SafetyContent,
+} from "./Types";
 
 // navigation
 export const NAV_ITEMS = [
@@ -25,7 +30,7 @@ export const NAV_ITEMS = [
   },
   {
     text: "Safety",
-    link: "/safety",
+    link: "/safetycenter",
     subNav: true,
     smallNav: true,
     largeNav: true,
@@ -350,6 +355,94 @@ export const FAQS = [
         question: "Why is my Nitro not working?",
         answer:
           "If you're having any trouble with your subscription, or have any questions, you can reach out to our team and we’ll be happy to help!",
+      },
+    ],
+  },
+];
+
+// safetycenter page
+export const HERO_CARD_CONTENTS = [
+  {
+    title: "What is Discord?",
+    text: "Discord is a voice, video, and text chat app that's used by tens of millions of people ages 13+ to talk and hang out with their communities and friends.",
+  },
+  {
+    title: "Discord's commitment to a safe and trusted experience",
+    text: "We work hard to ensure everyone on Discord is able to have meaningful conversations and spend time with their communities in a safe, positive, and inclusive manner.",
+  },
+  {
+    title: "Reporting problems to Discord",
+    text: "If you encounter a violation of our Terms of Service or Community Guidelines, we ask that you report this behavior to us.",
+  },
+];
+
+export const SAFETY_CONTENTS: SafetyContent[] = [
+  {
+    title: "Safety",
+    image: "safety_card1.png",
+    bodyContents: [
+      {
+        text: "Learn how to stay safe on Discord, and about the tools and resources available to teens, parents, and law enforcement.",
+      },
+      {
+        text: "Learn about the resources available to teens and parents to help stay safe on Discord.",
+      },
+    ],
+    subCards: [
+      {
+        image: "safety_card1_sub1.png",
+        title: "Parents & Educators",
+        catchText: "Helping your teen stay safe on Discord",
+      },
+      {
+        image: "safety_card1_sub2.png",
+        title: "Controlling Your Experience",
+        catchText: "Tips against spam and hacking",
+      },
+      {
+        image: "safety_card1_sub3.png",
+        title: "Controlling Your Experience",
+        catchText: "Four steps to a super safe server",
+      },
+      {
+        image: "safety_card1_sub4.png",
+        title: "Controlling Your Experience",
+        catchText: "Four steps to a super safe account",
+      },
+    ],
+  },
+  {
+    title: "Moderation",
+    image: "safety_card2.png",
+    bodyContents: [
+      {
+        text: "A comprehensive resource to learn about moderation, community management, and more.",
+      },
+      {
+        text: "An ever-growing resource for moderators of all skill levels to learn how to sharpen their abilities and foster great communities.",
+      },
+    ],
+    subCards: [
+      {
+        image: "safety_card2_sub1.png",
+        title: "Basics",
+        catchText: "104:How To Report Content To Discord",
+      },
+      {
+        image: "safety_card2_sub2.png",
+        title: "Setup and Function",
+        catchText: "206: Best Practices for Reporting Tools",
+      },
+      {
+        image: "safety_card2_sub3.png",
+        title: "Advanced Community Management",
+        catchText: "314: Training and Onboarding New Moderators",
+      },
+      {
+        image: "safety_card2_sub4.png",
+        title: "Moderation Seminars",
+        catchText:
+          "442: Using Insights to Improve Community Growth and Engagement",
       },
     ],
   },

@@ -30,9 +30,9 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
             />
           </div>
         </div>
-        {props.plans.map((plan) => {
+        {props.plans.map((plan,index) => {
           return (
-            <div className="flex justify-between items-center w-11/12 mx-auto border-b border-[#ddd]">
+            <div key={index} className="flex justify-between items-center w-11/12 mx-auto border-b border-[#ddd]">
               <span className="w-1/3 lg:w-2/3 text-left font-light text-sm md:text-md max-h-14 overflow-y-scroll scrollbar-hide">
                 {plan.textContent}
               </span>

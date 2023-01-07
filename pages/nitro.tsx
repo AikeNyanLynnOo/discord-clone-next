@@ -7,7 +7,7 @@ import { Content } from "../components/Nitro/ContentComponent";
 import { Faq } from "../components/Nitro/FaqComponent";
 import { NitroSubscribe } from "../components/Nitro/NitroSubscribeComponent";
 
-export default function Home() {
+export default function Nitro() {
   const [selectedCountry, setSelectedCountry] = useState(0);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
   const [currentTab, setCurrentTab] = useState(0);

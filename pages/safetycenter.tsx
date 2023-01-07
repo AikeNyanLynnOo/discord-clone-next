@@ -1,11 +1,11 @@
 import { PageHead } from "../components/shared/PageHead";
-import { HomeContentWrapper } from "../components/Home/ContentComponent";
-import { HeroSection } from "../components/Home/HeroSectionComponent";
+import { HeroSection } from "../components/Safety/HeroSectionComponent";
 import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
+import { Content } from "../components/Safety/ContentComponent";
 
-export default function Home() {
+export default function Safety() {
   const [selectedCountry, setSelectedCountry] = useState(0);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
@@ -13,6 +13,7 @@ export default function Home() {
     // console.log("toggling");
     setIsSelectOpen((prev) => !prev);
   };
+
   return (
     <div
       onClick={() => {
@@ -21,10 +22,10 @@ export default function Home() {
         }
       }}
     >
-      <PageHead pageTitle="Discord Clone By a1k3" />
-      <Navigation currentNav={"home"} />
+      <PageHead pageTitle="Discord Safety Center" />
+      <Navigation currentNav={"safetycenter"} />
       <HeroSection />
-      <HomeContentWrapper />
+      <Content />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
