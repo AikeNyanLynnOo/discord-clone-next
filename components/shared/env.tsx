@@ -1,5 +1,123 @@
 import { NitroCardContent, NitroPlan, HomeFlexContent } from "./Types";
 
+// navigation
+export const NAV_ITEMS = [
+  {
+    text: "Download",
+    link: "/download",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Nitro",
+    link: "/nitro",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Discover",
+    link: "/discover",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Safety",
+    link: "/safety",
+    subNav: true,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Mod Academy",
+    link: "",
+    subNav: true,
+    smallNav: true,
+    largeNav: false,
+  },
+  {
+    text: "Support",
+    link: "/support",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Blog",
+    link: "/blog",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+  {
+    text: "Careers",
+    link: "/careers",
+    subNav: false,
+    smallNav: true,
+    largeNav: true,
+  },
+];
+
+export const SAFETY_SUBDATA = [
+  {
+    title: "Safety Center",
+    liText: [
+      {
+        text: "Overview",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Controlling Your Experience",
+    liText: [
+      {
+        text: "Four steps to a super safe server",
+        link: "",
+      },
+      {
+        text: "Role of administrators and moderators on Discord",
+        link: "",
+      },
+      {
+        text: "Reporting problems to Discord",
+        link: "",
+      },
+    ],
+  },
+];
+
+export const MODERATOR_ACAMEDY_DATA = [
+  {
+    title: "Moderator Academy",
+    liText: [
+      {
+        text: "Overview",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Basics",
+    liText: [
+      {
+        text: "100: An Intro to the DMA",
+        link: "",
+      },
+      {
+        text: "103: Basic Channel Setup",
+        link: "",
+      },
+      {
+        text: "104: How to Report Content to Discord",
+        link: "",
+      },
+    ],
+  },
+];
+
 // home page
 export const HOME_FLEX_CONTENTS: HomeFlexContent[] = [
   {
@@ -20,6 +138,48 @@ export const HOME_FLEX_CONTENTS: HomeFlexContent[] = [
 ];
 
 // nitro page
+
+export const BASIC_CARD_CONTENTS: NitroCardContent[] = [
+  {
+    imgSrc: "up.svg",
+    textContent: "50MB uploads",
+  },
+  {
+    imgSrc: "smile.svg",
+    textContent: "Custom emoji anywhere",
+  },
+  {
+    imgSrc: "nitro_vector.svg",
+    textContent: "Special Nitro badge on your profile",
+  },
+];
+export const SPECIAL_CARD_CONTENTS: NitroCardContent[] = [
+  {
+    imgSrc: "up.svg",
+    textContent: "500MB uploads",
+  },
+  {
+    imgSrc: "smile.svg",
+    textContent: "Custom emoji anywhere",
+  },
+  {
+    imgSrc: "stream.svg",
+    textContent: "HD video streaming",
+  },
+  {
+    imgSrc: "rocket.svg",
+    textContent: "Access to Activities",
+  },
+  {
+    imgSrc: "server.svg",
+    textContent: "2 Server Boosts",
+  },
+  {
+    imgSrc: "profile_card.svg",
+    textContent: "Custom profiles and more!",
+  },
+];
+
 export const NITRO_GRID_CONTENTS: NitroCardContent[] = [
   {
     textContent: "From clips to pics, share away with bigger file uploads",

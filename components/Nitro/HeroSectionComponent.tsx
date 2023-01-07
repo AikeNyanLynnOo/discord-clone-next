@@ -1,47 +1,7 @@
 import HeroStyles from "../../styles/HeroSection.module.css";
 import { Card } from "./CardComponent";
-import { NitroCardContent } from "../shared/Types";
 
-const basicCardContents: NitroCardContent[] = [
-  {
-    imgSrc: "up.svg",
-    textContent: "50MB uploads",
-  },
-  {
-    imgSrc: "smile.svg",
-    textContent: "Custom emoji anywhere",
-  },
-  {
-    imgSrc: "nitro_vector.svg",
-    textContent: "Special Nitro badge on your profile",
-  },
-];
-const specialCardContents: NitroCardContent[] = [
-  {
-    imgSrc: "up.svg",
-    textContent: "500MB uploads",
-  },
-  {
-    imgSrc: "smile.svg",
-    textContent: "Custom emoji anywhere",
-  },
-  {
-    imgSrc: "stream.svg",
-    textContent: "HD video streaming",
-  },
-  {
-    imgSrc: "rocket.svg",
-    textContent: "Access to Activities",
-  },
-  {
-    imgSrc: "server.svg",
-    textContent: "2 Server Boosts",
-  },
-  {
-    imgSrc: "profile_card.svg",
-    textContent: "Custom profiles and more!",
-  },
-];
+import { BASIC_CARD_CONTENTS, SPECIAL_CARD_CONTENTS } from "../shared/env";
 
 export const HeroSection = () => {
   return (
@@ -73,12 +33,12 @@ export const HeroSection = () => {
       <div className="absolute z-10 bottom-0 block md:flex justify-between w-11/12 md:w-10/12 left-1/2 -translate-x-1/2 translate-y-3/4 md:translate-y-1/2">
         <Card
           headerImg="nitro_basic_text.svg"
-          cardContents={basicCardContents}
+          cardContents={BASIC_CARD_CONTENTS}
           cardType={"basic"}
         />
         <Card
           headerImg="nitro_special_text.svg"
-          cardContents={specialCardContents}
+          cardContents={SPECIAL_CARD_CONTENTS}
           cardType={"special"}
         />
       </div>

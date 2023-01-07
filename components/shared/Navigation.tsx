@@ -2,122 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavStyles from "../../styles/Navigation.module.css";
-
-const navItems = [
-  {
-    text: "Download",
-    link: "/download",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Nitro",
-    link: "/nitro",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Discover",
-    link: "/discover",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Safety",
-    link: "/safety",
-    subNav: true,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Mod Academy",
-    link: "",
-    subNav: true,
-    smallNav: true,
-    largeNav: false,
-  },
-  {
-    text: "Support",
-    link: "/support",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Blog",
-    link: "/blog",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-  {
-    text: "Careers",
-    link: "/careers",
-    subNav: false,
-    smallNav: true,
-    largeNav: true,
-  },
-];
-
-const safetySubData = [
-  {
-    title: "Safety Center",
-    liText: [
-      {
-        text: "Overview",
-        link: "",
-      },
-    ],
-  },
-  {
-    title: "Controlling Your Experience",
-    liText: [
-      {
-        text: "Four steps to a super safe server",
-        link: "",
-      },
-      {
-        text: "Role of administrators and moderators on Discord",
-        link: "",
-      },
-      {
-        text: "Reporting problems to Discord",
-        link: "",
-      },
-    ],
-  },
-];
-const moderatorAcademyData = [
-  {
-    title: "Moderator Academy",
-    liText: [
-      {
-        text: "Overview",
-        link: "",
-      },
-    ],
-  },
-  {
-    title: "Basics",
-    liText: [
-      {
-        text: "100: An Intro to the DMA",
-        link: "",
-      },
-      {
-        text: "103: Basic Channel Setup",
-        link: "",
-      },
-      {
-        text: "104: How to Report Content to Discord",
-        link: "",
-      },
-    ],
-  },
-];
+import { NAV_ITEMS, SAFETY_SUBDATA, MODERATOR_ACAMEDY_DATA } from "./env";
 
 const ButtonGroup = () => {
   return (
@@ -171,7 +56,7 @@ export const Navigation = (props: any) => {
           <h1 className="x-large-font inline text-white">Discord</h1>
         </Link>
         <ul className="normal-font w-2/4 hidden lg:flex justify-between items-center text-white font-semibold">
-          {navItems
+          {NAV_ITEMS
             .filter((item) => item.largeNav)
             .map((navItem, index) => (
               <li key={index} className="hover:underline">
@@ -209,7 +94,7 @@ export const Navigation = (props: any) => {
             <ul
               className={`py-4 ${NavStyles.ulMaxHeight} overflow-y-scroll scrollbar-hide bg-white`}
             >
-              {navItems
+              {NAV_ITEMS
                 .filter((item) => item.smallNav)
                 .map((navItem, index) => (
                   <li
@@ -276,7 +161,7 @@ export const Navigation = (props: any) => {
                 className={`py-4 ${NavStyles.ulMaxHeight} bg-white overflow-y-scroll scrollbar-hide`}
               >
                 {(currentSubNav === "Safety" &&
-                  safetySubData.map((data, index) => (
+                  SAFETY_SUBDATA.map((data, index) => (
                     <div className="border-b py-3 px-2" key={index}>
                       <h2 className="text-lg mb-2">{data.title}</h2>
                       <ul className="px-3">
@@ -291,7 +176,7 @@ export const Navigation = (props: any) => {
                       </ul>
                     </div>
                   ))) ||
-                  moderatorAcademyData.map((data, index) => (
+                  MODERATOR_ACAMEDY_DATA.map((data, index) => (
                     <div className="border-b py-3 px-2" key={index}>
                       <h2 className="text-lg mb-2">{data.title}</h2>
                       <ul className="px-3">
