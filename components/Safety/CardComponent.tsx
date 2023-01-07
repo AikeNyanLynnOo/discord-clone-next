@@ -14,7 +14,7 @@ export const Card = ({
 }) => {
   return (
     <div className="block md:flex justify-between bg-none md:bg-[#F6F6F6] rounded-lg p-5 md:p-10 my-10">
-      <div className="w-full md:w-4/12">
+      <div className="w-full md:w-3/12">
         <h3 className="large-font font-bold text-[#5865F2] text-3xl md:text-4xl">
           {title}
         </h3>
@@ -28,7 +28,7 @@ export const Card = ({
           View all
         </button>
       </div>
-      <div className="mt-10 md:mt-0 w-full md:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
+      <div className="mt-10 md:mt-0 w-full md:w-8/12 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8">
         {subCards.map((subCard, index) => (
           <div key={index}>
             <img
