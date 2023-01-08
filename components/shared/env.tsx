@@ -23,7 +23,7 @@ export const NAV_ITEMS = [
   },
   {
     text: "Discover",
-    link: "/discover",
+    link: "/servers",
     subNav: false,
     smallNav: true,
     largeNav: true,

@@ -19,6 +19,16 @@
   width: 100%;
 }
 
+.servers_bg_1 {
+  scale: 3;
+  height: 100%;
+  width: 100%;
+}
+.servers_bg_2,
+.servers_bg_3 {
+  margin-bottom: -4px;
+}
+
 @media only screen and (max-width: 767px) {
   .hero1_bg {
     bottom: 80px;
