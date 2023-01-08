@@ -3,6 +3,8 @@ import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
 import { HeroSection } from "../components/Discover/HeroSectionComponent";
+import { SearchBar } from "../components/Discover/SearchBarComponent";
+import { Content } from "../components/Discover/ContentComponent";
 
 export default function Safety() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -24,6 +26,7 @@ export default function Safety() {
       <PageHead pageTitle="Discord Servers - Home" />
       <Navigation currentNav={"servers"} />
       <HeroSection />
+      <Content />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
