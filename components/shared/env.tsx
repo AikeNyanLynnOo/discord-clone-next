@@ -447,3 +447,92 @@ export const SAFETY_CONTENTS: SafetyContent[] = [
     ],
   },
 ];
+
+// servers page
+
+export const SERVERS_CONTENT_NAV_ITEMS = [
+  {
+    navLink: "",
+    image: "compass.png",
+    text: "All",
+    count: "15338",
+  },
+  {
+    navLink: "gaming",
+    image: "game.png",
+    text: "Gaming",
+    count: "11376",
+  },
+  {
+    navLink: "entertainment",
+    image: "tv.png",
+    text: "Entertainment",
+    count: "6416",
+  },
+  {
+    navLink: "education",
+    image: "education.png",
+    text: "Education",
+    count: "1278",
+  },
+  {
+    navLink: "science",
+    image: "science.png",
+    text: "Science & Tech",
+    count: "1256",
+  },
+  {
+    navLink: "music",
+    image: "music.png",
+    text: "Music",
+    count: "1150",
+  },
+];
+
+export const SERVERS_NAVITEM_CONTENTS = [
+  {
+    imgLg: "servers_content1.jpg",
+    imgSm: "servers_content1_sm.jpg",
+    online: "175236",
+    totalMembers: "1000000",
+    title: "Blox Fruits",
+    bodyText:
+      " The official community for the popular Roblox game known as Blox Fruits.",
+  },
+  {
+    imgLg: "servers_content2.jpg",
+    imgSm: "servers_content2_sm.jpg",
+    online: "175236",
+    totalMembers: "1000000",
+    title: "Blox Fruits",
+    bodyText:
+      " The official community for the popular Roblox game known as Blox Fruits.",
+  },
+  {
+    imgLg: "servers_content3.jpg",
+    imgSm: "servers_content3_sm.jpg",
+    online: "175236",
+    totalMembers: "1000000",
+    title: "Blox Fruits",
+    bodyText:
+      " The official community for the popular Roblox game known as Blox Fruits.",
+  },
+  {
+    imgLg: "servers_content4.jpg",
+    imgSm: "servers_content4_sm.jpg",
+    online: "175236",
+    totalMembers: "1000000",
+    title: "Blox Fruits",
+    bodyText:
+      " The official community for the popular Roblox game known as Blox Fruits.",
+  },
+  {
+    imgLg: "servers_content5.jpg",
+    imgSm: "servers_content5_sm.jpg",
+    online: "175236",
+    totalMembers: "1000000",
+    title: "Blox Fruits",
+    bodyText:
+      " The official community for the popular Roblox game known as Blox Fruits.",
+  },
+];

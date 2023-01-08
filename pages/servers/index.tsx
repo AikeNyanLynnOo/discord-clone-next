@@ -1,14 +1,17 @@
-import { PageHead } from "../components/shared/PageHead";
-import { Navigation } from "../components/shared/Navigation";
-import { Footer } from "../components/shared/FooterComponent";
+import { PageHead } from "../../components/shared/PageHead";
+import { Navigation } from "../../components/shared/Navigation";
+import { Footer } from "../../components/shared/FooterComponent";
 import { useState } from "react";
-import { HeroSection } from "../components/Discover/HeroSectionComponent";
-import { SearchBar } from "../components/Discover/SearchBarComponent";
-import { Content } from "../components/Discover/ContentComponent";
+import { HeroSection } from "../../components/Discover/HeroSectionComponent";
+import { Content } from "../../components/Discover/ContentComponent";
 
-export default function Safety() {
+import { useRouter } from "next/router";
+
+export default function Servers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
   const [isSelectOpen, setIsSelectOpen] = useState(false);
+
+  const router = useRouter();
 
   const toggleSelectBox = () => {
     // console.log("toggling");
@@ -26,7 +29,7 @@ export default function Safety() {
       <PageHead pageTitle="Discord Servers - Home" />
       <Navigation currentNav={"servers"} />
       <HeroSection />
-      <Content />
+      <Content navLink={""} />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
