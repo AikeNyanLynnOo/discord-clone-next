@@ -6,6 +6,7 @@ import { HeroSection } from "../../components/Discover/HeroSectionComponent";
 import { Content } from "../../components/Discover/ContentComponent";
 
 import { useRouter } from "next/router";
+import { Pagination } from "../../components/Discover/PaginationComponent";
 
 export default function Servers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -13,7 +14,7 @@ export default function Servers() {
 
   const router = useRouter();
   const { navLink } = router.query;
-  
+
   const toggleSelectBox = () => {
     // console.log("toggling");
     setIsSelectOpen((prev) => !prev);
@@ -31,6 +32,7 @@ export default function Servers() {
       <Navigation currentNav={"servers"} />
       <HeroSection />
       <Content navLink={navLink} />
+      <Pagination />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

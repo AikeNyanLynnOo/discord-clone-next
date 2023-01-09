@@ -497,7 +497,7 @@ export const SERVERS_NAVITEM_CONTENTS = [
     totalMembers: "1000000",
     title: "Blox Fruits",
     bodyText:
-      " The official community for the popular Roblox game known as Blox Fruits.",
+      " The official community for the popular Roblox game known as Blox Fruits. The official community for the popular Roblox game known as Blox Fruits.",
   },
   {
     imgLg: "servers_content2.jpg",
@@ -515,7 +515,7 @@ export const SERVERS_NAVITEM_CONTENTS = [
     totalMembers: "1000000",
     title: "Blox Fruits",
     bodyText:
-      " The official community for the popular Roblox game known as Blox Fruits.",
+      " The official community for the popular Roblox game known as Blox Fruits. The official community for the popular Roblox game known as Blox Fruits.",
   },
   {
     imgLg: "servers_content4.jpg",
@@ -533,6 +533,6 @@ export const SERVERS_NAVITEM_CONTENTS = [
     totalMembers: "1000000",
     title: "Blox Fruits",
     bodyText:
-      " The official community for the popular Roblox game known as Blox Fruits.",
+      " The official community for the popular Roblox game known as Blox Fruits. The official community for the popular Roblox game known as Blox Fruits.",
   },
 ];

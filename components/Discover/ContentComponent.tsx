@@ -7,7 +7,7 @@ export const Content = ({
   navLink: string | string[] | undefined;
 }) => {
   return (
-    <div className="w-full md:w-9/12 mx-auto px-4 md:px-10 py-14">
+    <div className="w-full lg:w-9/12 mx-auto px-4 md:px-10 py-14">
       <SearchBar />
       <div>
         <ContentNavList navLink={navLink} />
