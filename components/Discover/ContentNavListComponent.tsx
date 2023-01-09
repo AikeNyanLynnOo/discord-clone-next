@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import {
   SERVERS_CONTENT_NAV_ITEMS,
   SERVERS_NAVITEM_CONTENTS,
@@ -9,14 +10,11 @@ export const ContentNavList = ({
 }: {
   navLink: string | string[] | undefined;
 }) => {
-  const currentPageItem = SERVERS_CONTENT_NAV_ITEMS.filter(
-    (item) => item.navLink === navLink
-  )[0];
   return (
     <div className="flex py-10">
       <ul className="w-1/3 mr-3">
         {SERVERS_CONTENT_NAV_ITEMS.map((item, index) => (
-          <Link href={`/servers/${item.navLink}`} key={index}>
+          <Link scroll={false} href={`/servers/${item.navLink}`} key={index}>
             <li
               className={`cursor-pointer text-[#2E3338] flex justify-between rounded-lg py-3 px-4 my-2 items-center ${
                 navLink === item.navLink ? "bg-[#DBDEE1]" : "bg-none"
@@ -36,7 +34,15 @@ export const ContentNavList = ({
       </ul>
       <div className="w-2/3 ">
         <h2 className="large-font text-lg font-bold">
-          {currentPageItem.count} Results Found in {currentPageItem.text}
+          {navLink !== undefined &&
+            SERVERS_CONTENT_NAV_ITEMS.filter(
+              (item) => item.navLink === navLink
+            )[0].count}{" "}
+          Results Found in{" "}
+          {navLink !== undefined &&
+            SERVERS_CONTENT_NAV_ITEMS.filter(
+              (item) => item.navLink === navLink
+            )[0].text}
         </h2>
         <div>
           {SERVERS_NAVITEM_CONTENTS.map((content, index) => (

@@ -12,8 +12,8 @@ export default function Servers() {
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
   const router = useRouter();
-  const { navLink } = router.query ;
-
+  const { navLink } = router.query;
+  
   const toggleSelectBox = () => {
     // console.log("toggling");
     setIsSelectOpen((prev) => !prev);

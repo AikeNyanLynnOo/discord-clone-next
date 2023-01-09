@@ -72,7 +72,7 @@ export const Footer = (props: any) => {
                   className="inline mr-4 w-6 h-5"
                 />
                 {countries[props.selectedCountry]}
-                <img src="images/caret-d.png" className="inline ml-3 w-2 h-2" />
+                <img src="/images/caret-d.png" className="inline ml-3 w-2 h-2" />
               </div>
               <ul
                 className={`${
