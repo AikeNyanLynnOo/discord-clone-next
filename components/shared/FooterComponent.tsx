@@ -1,57 +1,7 @@
 import Link from "next/link";
+import { COUNTRIES,PRODUCT_LINKS,COMPANY_LINKS,RESOURCE_LINKS, POLICY_LINKS } from "./env";
+
 export const Footer = (props: any) => {
-  const countries = [
-    "български",
-    "Čeština",
-    "Dansk",
-    "Deutsch",
-    "Ελληνικά",
-    "English, USA",
-    "Español",
-    "Suomi",
-    "Français",
-    "हिंदी",
-    "Hrvatski",
-    "Magyar",
-    "Italiano",
-    "日本語",
-    "한국어",
-    "Lietuviškai",
-    "Nederlands",
-    "Norwegian",
-    "Polski",
-    "Português do Brasil",
-    "Română",
-    "Русский",
-    "Svenska",
-    "ไทย",
-    "Türkçe",
-    "Українська",
-    "Tiếng Việt",
-    "中文",
-    "繁體中文",
-  ];
-  const productLinks = ["Download", "Nitro", "Status"];
-  const companyLinks = ["About", "Jobs", "Branding", "Newsroom"];
-  const resourceLinks = [
-    "College",
-    "Support",
-    "Safety",
-    "Blog",
-    "Feedback",
-    "Developers",
-    "StreamKit",
-    "Creators",
-  ];
-  const policyLinks = [
-    "Terms",
-    "Privacy",
-    "Cookie Settings",
-    "Guidelines",
-    "Acknowledgements",
-    "Licenses",
-    "Moderation",
-  ];
 
   return (
     <footer className="bg-[#23272A] w-100">
@@ -71,7 +21,7 @@ export const Footer = (props: any) => {
                   src={`/images/countries/${props.selectedCountry + 1}.png`}
                   className="inline mr-4 w-6 h-5"
                 />
-                {countries[props.selectedCountry]}
+                {COUNTRIES[props.selectedCountry]}
                 <img src="/images/caret-d.png" className="inline ml-3 w-2 h-2" />
               </div>
               <ul
@@ -79,7 +29,7 @@ export const Footer = (props: any) => {
                   props.isSelectOpen ? "absolute" : "hidden"
                 } bottom-9 z-20 max-h-60 overflow-y-scroll bg-white py-2 rounded-md border`}
               >
-                {countries.map((country, index) => (
+                {COUNTRIES.map((country, index) => (
                   <li
                     value={index}
                     key={index}
@@ -128,7 +78,7 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Product</h3>
               <ul className="text-white">
-                {productLinks.map((link, index) => (
+                {PRODUCT_LINKS.map((link, index) => (
                   <Link
                     key={index}
                     className="my-2 text-sm block hover:underline"
@@ -142,7 +92,7 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Company</h3>
               <ul className="text-white">
-                {companyLinks.map((link, index) => (
+                {COMPANY_LINKS.map((link, index) => (
                   <Link
                     key={index}
                     className="my-2 text-sm block hover:underline"
@@ -156,7 +106,7 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Resources</h3>
               <ul className="text-white">
-                {resourceLinks.map((link, index) => (
+                {RESOURCE_LINKS.map((link, index) => (
                   <Link
                     key={index}
                     className="my-2 text-sm block hover:underline"
@@ -170,7 +120,7 @@ export const Footer = (props: any) => {
             <div className="mb-4 md:mb-0">
               <h3 className="text-[#5865f2]">Policies</h3>
               <ul className="text-white">
-                {policyLinks.map((link, index) => (
+                {POLICY_LINKS.map((link, index) => (
                   <Link
                     key={index}
                     className="my-2 text-sm block hover:underline"

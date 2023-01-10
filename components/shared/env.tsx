@@ -536,3 +536,58 @@ export const SERVERS_NAVITEM_CONTENTS = [
       " The official community for the popular Roblox game known as Blox Fruits. The official community for the popular Roblox game known as Blox Fruits.",
   },
 ];
+
+// footer page
+
+export const COUNTRIES = [
+  "български",
+  "Čeština",
+  "Dansk",
+  "Deutsch",
+  "Ελληνικά",
+  "English, USA",
+  "Español",
+  "Suomi",
+  "Français",
+  "हिंदी",
+  "Hrvatski",
+  "Magyar",
+  "Italiano",
+  "日本語",
+  "한국어",
+  "Lietuviškai",
+  "Nederlands",
+  "Norwegian",
+  "Polski",
+  "Português do Brasil",
+  "Română",
+  "Русский",
+  "Svenska",
+  "ไทย",
+  "Türkçe",
+  "Українська",
+  "Tiếng Việt",
+  "中文",
+  "繁體中文",
+];
+export const PRODUCT_LINKS = ["Download", "Nitro", "Status"];
+export const COMPANY_LINKS = ["About", "Jobs", "Branding", "Newsroom"];
+export const RESOURCE_LINKS = [
+  "College",
+  "Support",
+  "Safety",
+  "Blog",
+  "Feedback",
+  "Developers",
+  "StreamKit",
+  "Creators",
+];
+export const POLICY_LINKS = [
+  "Terms",
+  "Privacy",
+  "Cookie Settings",
+  "Guidelines",
+  "Acknowledgements",
+  "Licenses",
+  "Moderation",
+];
