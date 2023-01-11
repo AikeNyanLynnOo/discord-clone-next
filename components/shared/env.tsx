@@ -538,7 +538,6 @@ export const SERVERS_NAVITEM_CONTENTS = [
 ];
 
 // footer page
-
 export const COUNTRIES = [
   "български",
   "Čeština",
@@ -590,4 +589,63 @@ export const POLICY_LINKS = [
   "Acknowledgements",
   "Licenses",
   "Moderation",
+];
+
+// support page
+
+export const SUPPORT_CARDSITEMS: {
+  image: string;
+  title: string;
+  body: string;
+}[] = [
+  {
+    image: "support_card1.svg",
+    title: "Announcements",
+    body: "We've got our ear to the ground. Here's what you need to know.",
+  },
+  {
+    image: "support_card2.svg",
+    title: "Discord's Interface",
+    body: "WHAT DOES THIS BUTTON DO!?!11",
+  },
+  {
+    image: "support_card3.svg",
+    title: "Account Settings",
+    body: "You're a special snowflake and so is your account.",
+  },
+  {
+    image: "support_card4.svg",
+    title: "Getting Started",
+    body: "Start off on the right foot! Not the left one!",
+  },
+  {
+    image: "support_card5.svg",
+    title: "Server Setup",
+    body: "Almost as exciting as interior decorating.",
+  },
+  {
+    image: "support_card6.svg",
+    title: "Community Programs",
+    body: "Bringing people together from all around the globe (and occasionally Mars)",
+  },
+  {
+    image: "support_card7.svg",
+    title: "Perks and Subscriptions",
+    body: "Please don't shop until you drop. Let us help.",
+  },
+  {
+    image: "support_card8.svg",
+    title: "Billing",
+    body: "That feel when you look at your bank account.",
+  },
+  {
+    image: "support_card9.svg",
+    title: "Trust & Safety",
+    body: "Keep things safe & sound for you and your buddies.",
+  },
+  {
+    image: "support_card10.svg",
+    title: "F.A.Q.s",
+    body: "All you can eat self-serve problem solving.",
+  },
 ];

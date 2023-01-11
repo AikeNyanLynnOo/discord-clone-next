@@ -49,7 +49,6 @@
 
 .country-1 {
   background-image: url(/images/countries/1.png);
-  background-color: red;
 }
 
 .nitro-mobile {
@@ -61,6 +60,93 @@
     rgba(133, 71, 198, 1) 5%,
     rgba(174, 86, 153, 1) 100%
   );
+}
+
+/* support */
+.support-hero-bg {
+  background-image: url(/images/herobg_1.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: #404eed;
+  z-index: -10;
+}
+.support-footer {
+  height: 70vh;
+  position: relative;
+}
+.support-footer-bg {
+  width: 60%;
+  max-width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.support-footer-browsers,
+.support-footer-android,
+.support-footer-apple,
+.support-footer-window,
+.support-footer-crossplatform {
+  position: absolute;
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+  top: 48%;
+  max-width: 30%;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+
+.support-footer-browsers {
+  width: 12%;
+  left: 27%;
+}
+.support-footer-android {
+  width: 3%;
+  left: 48%;
+}
+.support-footer-apple {
+  width: 3%;
+  left: 54.85%;
+}
+.support-footer-window {
+  width: 3%;
+  left: 66.5%;
+}
+.support-footer-crossplatform {
+  width: 3%;
+  left: 70.5%;
+}
+
+.support-footer-browsers:hover,
+.support-footer-android:hover,
+.support-footer-apple:hover,
+.support-footer-window:hover,
+.support-footer-crossplatform:hover {
+  filter: brightness(1);
+  -webkit-filter: brightness(1);
+}
+.support-footer-line {
+  position: absolute;
+  height: 1px;
+  max-height: 1%;
+  width: 70%;
+  max-width: 70%;
+  top: 65%;
+  left: 50%;
+  background-color: rgb(81, 83, 83);
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 
 @media only screen and (max-width: 767px) {

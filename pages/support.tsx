@@ -1,7 +1,9 @@
 import { PageHead } from "../components/shared/PageHead";
 import { NavBar } from "../components/Support/NavBarComponent";
-import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
+import { HeroSection } from "../components/Support/HeroSectionComponent";
+import { Content } from "../components/Support/ContentComponent";
+import { Footer } from "../components/Support/FooterComponent";
 
 export default function Nitro() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -45,13 +47,9 @@ export default function Nitro() {
         setIsNavOpen={setIsNavOpen}
         toggleNav={toggleNav}
       />
-      <Footer
-        selectedCountry={selectedCountry}
-        setSelectedCountry={setSelectedCountry}
-        isSelectOpen={isSelectOpen}
-        setIsSelectOpen={setIsSelectOpen}
-        toggleSelectBox={toggleSelectBox}
-      />
+      <HeroSection />
+      <Content />
+      <Footer />
     </div>
   );
 }

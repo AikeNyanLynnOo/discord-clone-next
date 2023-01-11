@@ -13,6 +13,12 @@ module.exports = {
       width: {
         1000: "300rem",
       },
+      // colors: {
+      //   "nav-home": "#404eed",
+      //   "nav-nitro": "#bb87f4",
+      //   "nav-safetycenter": "#5865f2",
+      //   "nav-servers": "#542ef2",
+      // },
     },
   },
 };
