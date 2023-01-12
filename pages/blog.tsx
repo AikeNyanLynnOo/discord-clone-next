@@ -3,6 +3,7 @@ import { HeroSection } from "../components/Blog/HeroSectionComponent";
 import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
+import { MidContentSection } from "../components/Blog/MidContentSectionComponent";
 
 export default function Blog() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -25,7 +26,7 @@ export default function Blog() {
       <PageHead pageTitle="Nitro Benefits and Features | Discord" />
       <Navigation currentNav={"blog"} />
       <HeroSection />
-
+      <MidContentSection />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

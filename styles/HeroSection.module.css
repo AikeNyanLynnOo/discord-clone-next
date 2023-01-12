@@ -27,6 +27,11 @@
   background-size: cover;
 }
 
+/* Blog page */
+.blog_hero {
+  height: 100px;
+}
+
 @media only screen and (max-width: 767px) {
   .hero1_bg {
     bottom: 80px;
@@ -52,5 +57,40 @@
 @media only screen and (min-width: 768px) {
   .hero3_bg {
     display: block;
+  }
+}
+
+/* block page responsive */
+
+@media only screen and (max-width: 1023px) {
+  .blog_hero {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog_hero {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+  .blog_hero {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  .blog_hero {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+  .blog_hero {
+    height: 550px;
+  }
+}
+@media only screen and (min-width : 1300px){
+  .blog_hero{
+    height: 800px;
   }
 }
