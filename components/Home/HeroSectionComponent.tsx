@@ -1,4 +1,4 @@
-
+import HeroStyles from "../../styles/HeroSection.module.css";
 
 export const HeroSection = () => {
   return (
