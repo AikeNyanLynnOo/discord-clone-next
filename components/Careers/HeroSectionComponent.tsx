@@ -1,9 +1,32 @@
 import HeroStyles from "../../styles/HeroSection.module.css";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 25,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      type: "spring",
+      stiffness: 500,
+    },
+  },
+};
 
 export const HeroSection = () => {
   return (
     <div className="bg-[#5865F2] h-auto">
-      <div className="text-center pt-36 text-white w-full md:w-8/12 mx-auto">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="text-center pt-36 text-white w-full md:w-8/12 mx-auto"
+      >
         <h1 className="x-large-font text-2xl md:text-3xl lg:text-5xl">
           WORK AT DISCORD
         </h1>
@@ -11,8 +34,14 @@ export const HeroSection = () => {
           Discord is home to (com)passionate people who believe in our mission
           of creating space for everyone to find belonging.
         </p>
-      </div>
-      <div className={`py-24 ${HeroStyles.careers_hero_relative}`}>
+      </motion.div>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className={`py-24 ${HeroStyles.careers_hero_relative}`}
+      >
         <img
           src="/images/careers_hero1.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_1}`}
@@ -33,7 +62,7 @@ export const HeroSection = () => {
           src="/images/careers_hero5.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_5}`}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
