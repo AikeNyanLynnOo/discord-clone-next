@@ -3,6 +3,7 @@ import { HeroSection } from "../components/Careers/HeroSectionComponent";
 import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
+import { MidContent } from "../components/Careers/MidContentComponent";
 
 export default function Careers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -25,6 +26,7 @@ export default function Careers() {
       <PageHead pageTitle="Jobs & Career Opportunies at Discord" />
       <Navigation currentNav={"careers"} />
       <HeroSection />
+      <MidContent />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavStyles from "../../styles/Navigation.module.css";
 import { NAV_ITEMS, SAFETY_SUBDATA, MODERATOR_ACAMEDY_DATA } from "./env";
-
 const ButtonGroup = () => {
   return (
     <div className="absolute bottom-6 z-20 flex justify-between items-center w-fit">
@@ -56,13 +55,11 @@ export const Navigation = (props: any) => {
           <h1 className="x-large-font inline text-white">Discord</h1>
         </Link>
         <ul className="normal-font w-2/4 hidden lg:flex justify-between items-center text-white font-semibold">
-          {NAV_ITEMS
-            .filter((item) => item.largeNav)
-            .map((navItem, index) => (
-              <li key={index} className="hover:underline">
-                <Link href={navItem.link}>{navItem.text}</Link>
-              </li>
-            ))}
+          {NAV_ITEMS.filter((item) => item.largeNav).map((navItem, index) => (
+            <li key={index} className="hover:underline">
+              <Link href={navItem.link}>{navItem.text}</Link>
+            </li>
+          ))}
         </ul>
         <div className="flex items-center w-1/4 justify-end">
           <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
@@ -94,9 +91,8 @@ export const Navigation = (props: any) => {
             <ul
               className={`py-4 ${NavStyles.ulMaxHeight} overflow-y-scroll scrollbar-hide bg-white`}
             >
-              {NAV_ITEMS
-                .filter((item) => item.smallNav)
-                .map((navItem, index) => (
+              {NAV_ITEMS.filter((item) => item.smallNav).map(
+                (navItem, index) => (
                   <li
                     key={index}
                     className={`${
@@ -125,7 +121,8 @@ export const Navigation = (props: any) => {
                       </span>
                     )}
                   </li>
-                ))}
+                )
+              )}
             </ul>
             <ButtonGroup />
           </div>

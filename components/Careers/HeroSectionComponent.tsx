@@ -12,8 +12,14 @@ const containerVariants = {
     transition: {
       duration: 0.5,
       type: "spring",
-      stiffness: 500,
+      stiffness: 100,
     },
+  },
+  draggable: {
+    left: 0,
+    top: 0,
+    right: 0,
+    bottom: 0,
   },
 };
 
@@ -42,23 +48,43 @@ export const HeroSection = () => {
         viewport={{ once: true }}
         className={`py-24 ${HeroStyles.careers_hero_relative}`}
       >
-        <img
+        <motion.img
+          variants={containerVariants}
+          drag
+          dragConstraints={containerVariants.draggable}
+          dragElastic={0.5}
           src="/images/careers_hero1.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_1}`}
         />
-        <img
+        <motion.img
+          variants={containerVariants}
+          drag
+          dragConstraints={containerVariants.draggable}
+          dragElastic={0.5}
           src="/images/careers_hero2.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_2}`}
         />
-        <img
+        <motion.img
+          variants={containerVariants}
+          drag
+          dragConstraints={containerVariants.draggable}
+          dragElastic={0.5}
           src="/images/careers_hero3.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_3}`}
         />
-        <img
+        <motion.img
+          variants={containerVariants}
+          drag
+          dragConstraints={containerVariants.draggable}
+          dragElastic={0.5}
           src="/images/careers_hero4.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_4}`}
-        />
-        <img
+          />
+        <motion.img
+          variants={containerVariants}
+          drag
+          dragConstraints={containerVariants.draggable}
+          dragElastic={0.5}
           src="/images/careers_hero5.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_5}`}
         />
