@@ -1,27 +1,6 @@
 import HeroStyles from "../../styles/HeroSection.module.css";
 import { motion } from "framer-motion";
-
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    y: 25,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      type: "spring",
-      stiffness: 100,
-    },
-  },
-  draggable: {
-    left: 0,
-    top: 0,
-    right: 0,
-    bottom: 0,
-  },
-};
+import { containerVariants } from "./constraints";
 
 export const HeroSection = () => {
   return (
@@ -29,7 +8,7 @@ export const HeroSection = () => {
       <motion.div
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
+        whileInView="visibleSpring"
         viewport={{ once: true }}
         className="text-center pt-36 text-white w-full md:w-8/12 mx-auto"
       >
@@ -44,7 +23,7 @@ export const HeroSection = () => {
       <motion.div
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
+        whileInView="visibleSpring"
         viewport={{ once: true }}
         className={`py-24 ${HeroStyles.careers_hero_relative}`}
       >

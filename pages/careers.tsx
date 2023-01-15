@@ -4,6 +4,7 @@ import { Navigation } from "../components/shared/Navigation";
 import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
 import { MidContent } from "../components/Careers/MidContentComponent";
+import { WorkCategories } from "../components/Careers/WorkCategoriesComponent";
 
 export default function Careers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -27,6 +28,7 @@ export default function Careers() {
       <Navigation currentNav={"careers"} />
       <HeroSection />
       <MidContent />
+      <WorkCategories />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}

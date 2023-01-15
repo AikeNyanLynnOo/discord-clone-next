@@ -649,3 +649,44 @@ export const SUPPORT_CARDSITEMS: {
     body: "All you can eat self-serve problem solving.",
   },
 ];
+
+// careers page
+
+export const CAREER_CATEGORIES = [
+  "Featured",
+  "Accounting",
+  "Consumer Marketing",
+  "Core Tech Engineering",
+  "Customer Experience",
+  "Data Engineering",
+  "Data Science & Analytics",
+  "Finance",
+  "Internships",
+  "Legal & Policy",
+  "Machine Learning",
+  "People Operations",
+  "Product Design",
+  "Product Engineering",
+  "Product Management",
+  "Recruiting",
+  "Talent Development",
+  "Workplace",
+];
+
+export const OPPORTUNITY_SAMPLE_DATA = [
+  {
+    title: "Senior Accounting Manager",
+    workLocation: "San Francisco, CA or Remote (U.S.)",
+    icon: "discord_opportunity.svg",
+  },
+  {
+    title: "Senior Payroll Analyst",
+    workLocation: "San Francisco, CA or Remote (U.S.)",
+    icon: "discord_opportunity.svg",
+  },
+  {
+    title: "Stock Administration Manager",
+    workLocation: "San Francisco, CA or Remote (U.S.)",
+    icon: "discord_opportunity.svg",
+  },
+];

@@ -155,6 +155,28 @@
   -o-transform: translate(-50%, 0);
 }
 
+/* careers page */
+
+/* width */
+.sm-scrollbar::-webkit-scrollbar {
+  height: 3px;
+}
+
+/* Track */
+.sm-scrollbar::-webkit-scrollbar-track {
+  background: #f6f6f6; 
+}
+ 
+/* Handle */
+.sm-scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(199, 196, 196); 
+}
+
+/* Handle on hover */
+.sm-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 @media only screen and (max-width: 767px) {
   .nitro-mobile {
     background-color: none;
