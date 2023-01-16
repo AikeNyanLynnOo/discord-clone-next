@@ -690,3 +690,21 @@ export const OPPORTUNITY_SAMPLE_DATA = [
     icon: "discord_opportunity.svg",
   },
 ];
+
+export const CAREER_INFO_CARD_DATA = [
+  {
+    title: "Jew-ish",
+    text: "Jew-ish at Discord is a place for Jews, non-Jews and anyone with an interest in Jewish culture, history, nosh, spirituality and more. It's a community within Discord that brings people together and enables them to share their religion and culture with each other, the Discord employee community and Jewish community at large.",
+    image: "career_info_card1.png",
+  },
+  {
+    title: "La Cafetería",
+    text: "La Cafetería is Discord’s’ Latinx ERG. Many of its members are the first in their communities or families to enter tech, and the group has made it their collective mission to build a space to enable Latinx folks to thrive without compromising their identity.",
+    image: "career_info_card2.png",
+  },
+  {
+    title: "Women at Discord",
+    text: "The Discord Women's ERG is a place where women and underrepresented genders can gather to discuss topics that impact them, get inspired by great work, offer support and guidance, and develop skills that help build successful careers. The group focuses on driving change that improves everyone's ultimate well-being by making systemic change that makes the table bigger for everyone.",
+    image: "career_info_card3.png",
+  },
+];

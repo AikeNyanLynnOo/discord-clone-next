@@ -5,6 +5,7 @@ import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
 import { MidContent } from "../components/Careers/MidContentComponent";
 import { WorkCategories } from "../components/Careers/WorkCategoriesComponent";
+import { CareerInfoCard } from "../components/Careers/CareerInforCard";
 
 export default function Careers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -29,6 +30,7 @@ export default function Careers() {
       <HeroSection />
       <MidContent />
       <WorkCategories />
+      <CareerInfoCard />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
