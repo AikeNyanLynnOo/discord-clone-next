@@ -102,21 +102,21 @@ export const MidContent = () => {
           className="rounded-xl order-last md:order-first"
         />
       </div>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visibleSpring"
-        viewport={{ once: true }}
-        className="text-center relative py-20"
-      >
+      <motion.div className="text-center relative py-20">
         <div className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-8/12">
           <h3 className="text-[#23272A] z-10 font-bold large-font text-xl sm:text-2xl md:text-3xl mb-6">
             Want to find out more?
           </h3>
-          <p className="font-light text-lg z-10">
+          <motion.p
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visibleSpring"
+            viewport={{ once: true }}
+            className="font-light text-lg z-10"
+          >
             Check out our inclusion, diversity and purpose efforts, or learn
             more about the Life @ Discord experience!
-          </p>
+          </motion.p>
         </div>
         <img
           src="/images/careers_watchout.svg"

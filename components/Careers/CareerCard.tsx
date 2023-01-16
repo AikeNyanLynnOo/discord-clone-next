@@ -8,7 +8,7 @@ export const CareerCard = ({
   icon: string;
 }) => {
   return (
-    <div className="bg-white rounded-xl flex flex-col justify-between py-5 px-6 h-auto sm:h-52 hover:shadow-lg cursor-pointer">
+    <div className="bg-white rounded-xl flex flex-col justify-between py-5 px-6 h-auto sm:h-52 hover:shadow-2xl cursor-pointer">
       <h1 className="pt-4 pb-7 font-semibold large-font text-[#23272A] text-lg sm:text-2xl lg:text-3xl">
         {title}
       </h1>
