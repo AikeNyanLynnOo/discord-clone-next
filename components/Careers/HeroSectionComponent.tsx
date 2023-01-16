@@ -1,6 +1,6 @@
 import HeroStyles from "../../styles/HeroSection.module.css";
 import { motion } from "framer-motion";
-import { containerVariants } from "./constraints";
+import { containerVariants } from "./MotionVariants";
 
 export const HeroSection = () => {
   return (

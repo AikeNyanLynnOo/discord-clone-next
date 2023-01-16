@@ -29,3 +29,9 @@ export interface SafetyContent {
   }[];
   subCards: SafetySubCardContent[];
 }
+
+export interface TitleImgBody {
+  title: string;
+  image: string;
+  body: string;
+}

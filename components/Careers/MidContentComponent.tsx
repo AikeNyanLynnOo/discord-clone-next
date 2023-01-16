@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { containerVariants } from "./constraints";
+import { containerVariants } from "./MotionVariants";
 
 export const MidContent = () => {
   return (

@@ -2,7 +2,7 @@ import { CAREER_CATEGORIES, OPPORTUNITY_SAMPLE_DATA } from "../shared/env";
 import { CareerCard } from "./CareerCard";
 import { CategoryButton } from "./CategoryButton";
 import { motion } from "framer-motion";
-import { containerVariants } from "./constraints";
+import { containerVariants } from "./MotionVariants";
 
 export const WorkCategories = () => {
   return (

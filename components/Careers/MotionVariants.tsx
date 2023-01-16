@@ -36,4 +36,11 @@ export const containerVariants = {
       duration: 0.4,
     },
   },
+  swipeLeft: {
+    x: "0",
+    transition: {
+      ease: "easeInOut",
+      duration: 0.4,
+    },
+  },
 };

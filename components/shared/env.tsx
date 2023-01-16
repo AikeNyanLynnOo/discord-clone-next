@@ -3,6 +3,7 @@ import {
   NitroPlan,
   HomeFlexContent,
   SafetyContent,
+  TitleImgBody,
 } from "./Types";
 
 // navigation
@@ -593,11 +594,7 @@ export const POLICY_LINKS = [
 
 // support page
 
-export const SUPPORT_CARDSITEMS: {
-  image: string;
-  title: string;
-  body: string;
-}[] = [
+export const SUPPORT_CARDSITEMS: TitleImgBody[] = [
   {
     image: "support_card1.svg",
     title: "Announcements",
@@ -691,20 +688,78 @@ export const OPPORTUNITY_SAMPLE_DATA = [
   },
 ];
 
-export const CAREER_INFO_CARD_DATA = [
+export const CAREER_INFO_CARD_DATA: TitleImgBody[] = [
   {
     title: "Jew-ish",
-    text: "Jew-ish at Discord is a place for Jews, non-Jews and anyone with an interest in Jewish culture, history, nosh, spirituality and more. It's a community within Discord that brings people together and enables them to share their religion and culture with each other, the Discord employee community and Jewish community at large.",
+    body: "Jew-ish at Discord is a place for Jews, non-Jews and anyone with an interest in Jewish culture, history, nosh, spirituality and more. It's a community within Discord that brings people together and enables them to share their religion and culture with each other, the Discord employee community and Jewish community at large.",
     image: "career_info_card1.png",
   },
   {
     title: "La Cafetería",
-    text: "La Cafetería is Discord’s’ Latinx ERG. Many of its members are the first in their communities or families to enter tech, and the group has made it their collective mission to build a space to enable Latinx folks to thrive without compromising their identity.",
+    body: "La Cafetería is Discord’s’ Latinx ERG. Many of its members are the first in their communities or families to enter tech, and the group has made it their collective mission to build a space to enable Latinx folks to thrive without compromising their identity.",
     image: "career_info_card2.png",
   },
   {
     title: "Women at Discord",
-    text: "The Discord Women's ERG is a place where women and underrepresented genders can gather to discuss topics that impact them, get inspired by great work, offer support and guidance, and develop skills that help build successful careers. The group focuses on driving change that improves everyone's ultimate well-being by making systemic change that makes the table bigger for everyone.",
+    body: "The Discord Women's ERG is a place where women and underrepresented genders can gather to discuss topics that impact them, get inspired by great work, offer support and guidance, and develop skills that help build successful careers. The group focuses on driving change that improves everyone's ultimate well-being by making systemic change that makes the table bigger for everyone.",
     image: "career_info_card3.png",
   },
+];
+
+export const CAREER_EXP_DATA: TitleImgBody[] = [
+  {
+    title: "Discord HQ",
+    image: "career_exp_img1.svg",
+    body: "Our platform is our headquarters! Because we believe great work isn't tied to a physical space, most of our roles offer flexibility — whether it's from the comfort of your home (in approved locations), an inspiring office setting or a combo of both! No matter where your desk lives, we offer generous support to help you remain productive and engaged.",
+  },
+  {
+    title: "Grow together",
+    image: "career_exp_img2.svg",
+    body: "Look forward to developing both professionally and personally alongside your colleagues at Discord. All of our managers go through a leadership program, and we offer diverse trainings for everyone. No matter what your interests or skills are, there's a place on our platform for you to find and build belonging.",
+  },
+  {
+    title: "Money matters",
+    image: "career_exp_img3.svg",
+    body: "Discord strives to offer fair and competitive compensation packages, including equity. You'll have room to grow and be rewarded based on your contributions and impact at the company.  Take advantage of our retirement offerings (including 401k matching in the U.S.) to meet your financial goals.",
+  },
+  {
+    title: "Health benefits",
+    image: "career_exp_img4.svg",
+    body: "At Discord, we health-care about you! We offer flexible health plans that cover both physical and mental healthcare.",
+  },
+  {
+    title: "Family support",
+    image: "career_exp_img5.svg",
+    body: "Spend some quality time with the next generation with parental leave, fertility, adoption, and surrogacy benefits.",
+  },
+  {
+    title: "R&R",
+    image: "career_exp_img6.svg",
+    body: "Stay refreshed with four weeks of PTO, 14+ paid holidays and flexible sick time (which includes mental health days).",
+  },
+  {
+    title: "Gender-affirming care",
+    image: "career_exp_img7.svg",
+    body: "Many medical insurance providers consider much of the treatment vital to one’s gender transition as cosmetic. We don’t. Use up to $20,000 for transition-related procedures.",
+  },
+  {
+    title: "Wellness on us",
+    image: "career_exp_img8.svg",
+    body: "Take advantage of a quarterly stipend for your gym membership or other activities to keep you feeling great. Plus virtual yoga every week!",
+  },
+  {
+    title: "Giving back",
+    image: "career_exp_img9.svg",
+    body: "Whatever social cause you’re passionate about, take a day (or two) off to make an impact. While you're at it, take advantage of $1,000/year in donation matching to charitable organizations!",
+  },
+];
+
+export const CAREER_FOOTER_IMAGES = [
+  "career_footer_carousel1.jpeg",
+  "career_footer_carousel2.jpeg",
+  "career_footer_carousel3.jpeg",
+  "career_footer_carousel4.jpeg",
+  "career_footer_carousel5.jpeg",
+  "career_footer_carousel6.jpeg",
+  "career_footer_carousel7.jpeg",
 ];

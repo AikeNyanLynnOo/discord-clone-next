@@ -5,7 +5,9 @@ import { Footer } from "../components/shared/FooterComponent";
 import { useState } from "react";
 import { MidContent } from "../components/Careers/MidContentComponent";
 import { WorkCategories } from "../components/Careers/WorkCategoriesComponent";
-import { CareerInfoCard } from "../components/Careers/CareerInforCard";
+import { CareerInfoCard } from "../components/Careers/CareerInfoCard";
+import { ExperienceGrid } from "../components/Careers/ExperienceGrid";
+import { FooterCarousel } from "../components/Careers/FooterCarousel";
 
 export default function Careers() {
   const [selectedCountry, setSelectedCountry] = useState(0);
@@ -31,6 +33,8 @@ export default function Careers() {
       <MidContent />
       <WorkCategories />
       <CareerInfoCard />
+      <ExperienceGrid />
+      <FooterCarousel />
       <Footer
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
