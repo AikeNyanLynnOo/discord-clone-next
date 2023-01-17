@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import {
   SERVERS_CONTENT_NAV_ITEMS,
@@ -19,7 +19,11 @@ export const ContentNavList = ({
               (item) => item.navLink === navLink
             )[0].text}
         </span>
-        <Image src="/images/caret-r.png" alt="caret-r" className="h-3 w-3 rotate-90" />
+        <img
+          src="/images/caret-r.png"
+          alt="caret-r"
+          className="h-3 w-3 rotate-90"
+        />
       </div>
 
       <ul className="w-1/3 mr-3 hidden md:block">
@@ -31,7 +35,7 @@ export const ContentNavList = ({
               }`}
             >
               <div>
-                <Image
+                <img
                   src={`/images/${item.image}`}
                   alt={`${item.image}`}
                   className="inline-block h-4 w-4 mr-3"
@@ -61,14 +65,14 @@ export const ContentNavList = ({
               className="block md:grid grid-cols-2 gap-x-4 my-6 p-0 md:p-2 hover:bg-[#DBDEE1] rounded-lg cursor-pointer"
               key={index}
             >
-              <Image
+              <img
                 src={`/images/${content.imgLg}`}
                 alt={`${content.imgLg}`}
                 className="rounded-lg hidden md:block"
               />
               <div className="hidden md:block">
                 <div className="flex items-center">
-                  <Image
+                  <img
                     src={`/images/${content.imgSm}`}
                     alt={`${content.imgSm}`}
                     className="inline-block h-6 w-6 mr-2 rounded-lg"
@@ -87,7 +91,7 @@ export const ContentNavList = ({
 
               <div className="flex md:hidden">
                 <div className="flex w-full">
-                  <Image
+                  <img
                     src={`/images/${content.imgSm}`}
                     alt={`${content.imgSm}`}
                     className="inline-block h-10 w-10 mr-4 rounded-lg"

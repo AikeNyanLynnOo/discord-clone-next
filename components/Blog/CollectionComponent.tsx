@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export const Collection = () => {
   return (
@@ -8,7 +8,11 @@ export const Collection = () => {
         <h1 className="x-large-font text-4xl text-[#5865F2] my-4">
           PRODUCT & FEATURES
         </h1>
-        <Image src="/images/blog_cardItem_main.svg" alt="cardItemMain" className="w-full" />
+        <img
+          src="/images/blog_cardItem_main.svg"
+          alt="cardItemMain"
+          className="w-full"
+        />
         <p className="large-font font-semibold text-lg py-5">
           Announcements, new features, and general info about the Discord app.
         </p>
@@ -18,7 +22,11 @@ export const Collection = () => {
       </div>
       <div className="w-full md:w-7/12">
         <div className="mb-5">
-          <Image src="/images/blog_carditem_top.png" alt="cardItemTop" className="w-full" />
+          <img
+            src="/images/blog_carditem_top.svg"
+            alt="cardItemTop"
+            className="w-full"
+          />
           <h2 className="font-bold text-xl py-4">
             Make Your Connection: Connected Accounts Get a Huge Functionality
             Boost
@@ -26,7 +34,7 @@ export const Collection = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-4 gap-y-3">
           <div>
-            <Image
+            <img
               src="/images/blog_sm_card1.png"
               alt="blog_sm_card1"
               className="w-full rounded-lg"
@@ -37,9 +45,11 @@ export const Collection = () => {
             </p>
           </div>
           <div>
-            <Image
+            <img
               src="/images/blog_card_item.png"
-              alt="blog_card_itme"
+              alt="blog_card_item"
+              width="0"
+              height="0"
               className="w-full rounded-lg"
             />
             <p className="py-3 font-semibold">
@@ -47,9 +57,11 @@ export const Collection = () => {
             </p>
           </div>
           <div>
-            <Image
+            <img
               src="/images/blog_sm_card5.png"
               alt="blog_sm_card5"
+              width="0"
+              height="0"
               className="w-full rounded-lg"
             />
             <p className="py-3 font-semibold">

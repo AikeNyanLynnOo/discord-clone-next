@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import { HeroSectionCard } from "./HeroSectionCardComponent";
 import { HERO_CARD_CONTENTS } from "../shared/env";
@@ -17,7 +17,7 @@ export const HeroSection = () => {
         ))}
       </div>
       <div className="hidden lg:flex h-screen flex-1 items-center">
-        <Image
+        <img
           src="/images/safety_hero.svg"
           alt="safety_hero"
           className="mx-auto h-4/6"

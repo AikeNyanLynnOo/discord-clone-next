@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import { NitroPlan } from "../shared/Types";
 
@@ -15,20 +15,20 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
           </span>
 
           <div className="flex-1 text-center px-5 py-6">
-            <Image
+            <img
               src={`/images/nitro_basic_black.svg`}
               alt="nitro_basic_black"
               className="w-12 md:w-20 inline-block"
             />
           </div>
           <div className="relative flex-1 text-center px-5 py-6 border-x-2 border-t-2 border-[#B845C1] rounded-t-2xl">
-            <Image
+            <img
               src={`/images/nitro_black.svg`}
               alt="nitro_black"
               className="w-12 md:w-20 inline"
             />
 
-            <Image
+            <img
               src={`/images/most_popular.svg`}
               alt="most_popular"
               className="hidden md:block w-24 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2"
@@ -47,7 +47,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
 
               <div className="flex-1 text-center px-5 py-6">
                 {(plan.basic.includes(".svg") && (
-                  <Image
+                  <img
                     src={`/images/${plan.basic}`}
                     alt={`${plan.basic}`}
                     className="h-3 w-3 md:h-6 md:w-6 inline-block"
@@ -60,7 +60,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
               </div>
               <div className="flex-1 text-center py-6 px-5 border-x-2 border-[#B845C1]">
                 {(plan.special.includes(".svg") && (
-                  <Image
+                  <img
                     src={`/images/${plan.special}`}
                     alt={`${plan.special}`}
                     className="h-3 w-3 md:h-6 md:w-6 inline-block"
@@ -91,7 +91,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
         </div>
         <div className="grid grid-cols-2 grid-gap-4 w-11/12 mx-auto pt-10 md:hidden">
           <div className="pt-5">
-            <Image
+            <img
               src={`/images/nitro_basic_black.svg`}
               alt="nitro_basic_black"
               className="w-24"
@@ -103,7 +103,7 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
             </button>
           </div>
           <div className="pt-5">
-            <Image
+            <img
               src={`/images/nitro_black.svg`}
               alt="nitro_black"
               className="w-24"

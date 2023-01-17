@@ -1,6 +1,6 @@
+// import Image from "next/image";
 import { useState } from "react";
 
-import Image from "next/image";
 import { CAREER_INFO_CARD_DATA } from "../shared/env";
 import { motion } from "framer-motion";
 import { containerVariants } from "./MotionVariants";
@@ -95,7 +95,7 @@ export const CareerInfoCard = () => {
             }}
             className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2"
           >
-            <Image
+            <img
               src="/images/career_info_left_arrow.svg"
               alt="career_info_left_arrow"
               className="w-1/2 mx-auto"
@@ -123,7 +123,7 @@ export const CareerInfoCard = () => {
             }}
             className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] right-0 top-1/2 translate-x-1/2 -translate-y-1/2"
           >
-            <Image
+            <img
               src="/images/career_info_right_arrow.svg"
               alt="career_info_right_arrow"
               className="w-1/2 mx-auto"
@@ -136,7 +136,7 @@ export const CareerInfoCard = () => {
                 id={`item${index}`}
                 className="min-w-full px-8 sm:px-10 lg:px-12 grid grid-cols-1 lg:grid-cols-3 items-start place-items-center"
               >
-                <Image
+                <img
                   src={`/images/${data.image}`}
                   alt={`${data.image}`}
                   className="col-span-1 w-3/4 sm:w-2/4 lg:w-3/4"

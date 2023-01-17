@@ -1,5 +1,5 @@
+// import Image from "next/image";
 import Link from "next/link";
-import Image from "next/image";
 import {
   COUNTRIES,
   PRODUCT_LINKS,
@@ -23,13 +23,13 @@ export const Footer = (props: any) => {
                 className="text-white rounded-lg h-8 w-fit flex items-center cursor-pointer select-none"
                 onClick={() => props.toggleSelectBox()}
               >
-                <Image
+                <img
                   src={`/images/countries/${props.selectedCountry + 1}.png`}
                   alt="country"
                   className="inline mr-4 w-6 h-5"
                 />
                 {COUNTRIES[props.selectedCountry]}
-                <Image
+                <img
                   src="/images/caret-d.png"
                   alt="caret-d"
                   className="inline ml-3 w-2 h-2"
@@ -47,7 +47,7 @@ export const Footer = (props: any) => {
                     onClick={() => props.setSelectedCountry(index)}
                     className="py-2 px-2 hover:bg-gray-200 rounded-lg cursor-pointer"
                   >
-                    <Image
+                    <img
                       src={`/images/countries/${index + 1}.png`}
                       alt="country"
                       className="inline mr-4 w-6 h-5"
@@ -60,28 +60,28 @@ export const Footer = (props: any) => {
 
             <div className="flex items-center mt-5">
               <Link href="https://twitter.com/">
-                <Image
+                <img
                   src={`/images/twitter.png`}
                   alt="twitter"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.instagram.com/">
-                <Image
+                <img
                   src={`/images/instagram.png`}
                   alt="instagram"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.facebook.com/">
-                <Image
+                <img
                   src={`/images/facebook.png`}
                   alt="facebook"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.youtube.com/">
-                <Image
+                <img
                   src={`/images/youtube.png`}
                   alt="youtube"
                   className="inline w-6 h-6 mt-2"
@@ -152,7 +152,7 @@ export const Footer = (props: any) => {
 
         <div className="flex justify-between px-10 md:px-20 py-10">
           <Link href="/">
-            <Image
+            <img
               src="/images/discord.png"
               alt="discord"
               className="inline mr-4 w-8 h-8"

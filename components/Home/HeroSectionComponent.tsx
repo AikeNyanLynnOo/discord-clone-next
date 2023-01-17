@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import HeroStyles from "../../styles/HeroSection.module.css";
 
 export const HeroSection = () => {
@@ -16,9 +16,11 @@ export const HeroSection = () => {
         </p>
         <div className="block md:flex justify-center w-full lg:w-9/12 mx-0 px-10 lg:mx-auto lg:px-0">
           <button className="px-7 py-4 bg-white text-lg rounded-full flex items-center xs:text-base sm:text-sm md:text-lg">
-            <Image
+            <img
               src="/images/download-black.png"
               alt="download-black"
+              width="0"
+              height="0"
               className=" w-3 h-3 mr-3"
             />
             Download for Linux
@@ -31,17 +33,17 @@ export const HeroSection = () => {
 
       <div className={`w-100 ${HeroStyles.height} relative overflow-hidden`}>
         {/* hero bg svgs */}
-        <Image
+        <img
           src="/images/herobg_1.svg"
           alt="herobg_1"
           className={`absolute bottom-32 ${HeroStyles.hero1_bg}`}
         />
-        <Image
+        <img
           src="/images/herobg_2.svg"
           alt="herobg_2"
           className={`absolute bottom-0 ${HeroStyles.hero2_bg}`}
         />
-        <Image
+        <img
           src="/images/herobg_3.svg"
           alt="herobg_3"
           className={`absolute bottom-0 ${HeroStyles.hero3_bg}`}

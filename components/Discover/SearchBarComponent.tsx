@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export const SearchBar = () => {
   return (
@@ -8,7 +8,7 @@ export const SearchBar = () => {
         placeholder="Explore communities"
       />
       <button className="bg-[#5865F2] rounded-lg flex-none text-center p-5">
-        <Image src="/images/search.png" alt="search" className="h-4 w-4" />
+        <img src="/images/search.png" alt="search" className="h-4 w-4" />
       </button>
     </div>
   );

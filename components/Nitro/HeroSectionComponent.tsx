@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import HeroStyles from "../../styles/HeroSection.module.css";
 import { Card } from "./CardComponent";
@@ -27,7 +27,7 @@ export const HeroSection = () => {
           <source src="/videos/nitrobg.mp4" type="video/mp4" />
           <source src="/videos/nitrobg.webm" type="video/webm" />
         </video>
-        <Image
+        <img
           src="/images/stable_robot.png"
           alt="stable_robot"
           className="block md:hidden w-1/2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"

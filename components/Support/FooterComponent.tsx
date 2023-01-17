@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -7,32 +7,32 @@ export const Footer = () => {
       <button className="bg-[#3BA55C] rounded-full text-white uppercase mx-auto px-20 py-2 font-bold">
         Learn More
       </button>
-      <Image
+      <img
         src="/images/support_footer.png"
         alt="support_footer"
         className="hidden md:block cursor-pointer support-footer-bg"
       />
-      <Image
+      <img
         src="/images/browsers.svg"
         alt="browsers"
         className="hidden md:block support-footer-browsers"
       />
-      <Image
+      <img
         src="/images/android.svg"
         alt="android"
         className="hidden md:block support-footer-android"
       />
-      <Image
+      <img
         src="/images/apple.svg"
         alt="apple"
         className="hidden md:block support-footer-apple"
       />
-      <Image
+      <img
         src="/images/window.svg"
         alt="window"
         className="hidden md:block support-footer-window"
       />
-      <Image
+      <img
         src="/images/cross_platform.svg"
         alt="cross_platform"
         className="hidden md:block support-footer-crossplatform"
@@ -40,7 +40,7 @@ export const Footer = () => {
       <div className="support-footer-line hidden md:block " />
       <div className="block md:flex w-7/12 justify-between absolute left-1/2 bottom-1/2 translate-y-1/2 md:bottom-5 md:translate-y-0 -translate-x-1/2">
         <Link href={"/"}>
-          <Image
+          <img
             src="/images/discord_white.svg"
             alt="cross_platform"
             className="h-10"

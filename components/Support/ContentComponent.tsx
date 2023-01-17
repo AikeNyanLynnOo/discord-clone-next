@@ -5,7 +5,9 @@ export const Content = () => {
   return (
     <div className="py-20">
       <div className="text-center large-font text-[#72767D]">
-        <h3 className="text-2xl mb-4 px-4">Need help? We&apos;ve got your back.</h3>
+        <h3 className="text-2xl mb-4 px-4">
+          Need help? We&apos;ve got your back.
+        </h3>
         <p className="w-11/12 md:w-6/12 mx-auto">
           From account settings to permissions, find help for everything Discord
           If you&apos;re new to Discord and looking for tips, check out our

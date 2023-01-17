@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import { HOME_FLEX_CONTENTS } from "../shared/env";
 export const FlexContent = () => {
@@ -11,7 +11,7 @@ export const FlexContent = () => {
             index % 2 === 0 ? "bg-white" : "bg-[#f6f6f6]"
           }`}
         >
-          <Image
+          <img
             className={`w-96 sm:w-3/4 mx-auto ${
               index % 2 === 0 ? "" : "order-last"
             }`}
@@ -45,7 +45,7 @@ export const HomeContentWrapper = () => {
           hello over video, watch friends stream their games, or gather up and
           have a drawing session with screen share.
         </p>
-        <Image
+        <img
           src="/images/home_content4.svg"
           alt="home_content4"
           className="w-full mx-auto"
@@ -55,13 +55,13 @@ export const HomeContentWrapper = () => {
         <h2 className="large-font font-bold text-xl md:text-2xl lg:text-3xl mb-10">
           Ready to start your journey?
         </h2>
-        <Image
+        <img
           src="/images/homebg_4.svg"
           alt="homebg_4"
           className={`absolute top-1/4 left-1/2 w-11/12 xl:w-5/12 -translate-x-1/2 -translate-y-3/4`}
         />
         <button className="px-8 py-4 text-white text-md bg-[#5865f2] rounded-full flex items-center w-fit mx-auto">
-          <Image
+          <img
             src="/images/download-white.png"
             alt="download-white"
             className=" w-5 h-5 mr-3"

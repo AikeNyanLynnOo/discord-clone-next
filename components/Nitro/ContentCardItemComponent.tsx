@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { NitroCardContent } from "../shared/Types";
 export const ContentCard = ({ textContent, imgSrc }: NitroCardContent) => {
   return (
@@ -8,7 +8,7 @@ export const ContentCard = ({ textContent, imgSrc }: NitroCardContent) => {
       <h2 className="text-[#23272A] px-6 py-5 large-font font-bold text-xl">
         {textContent}
       </h2>
-      <Image src={`/images/${imgSrc}`} alt={`${imgSrc}`} className="inline" />
+      <img src={`/images/${imgSrc}`} alt={`${imgSrc}`} className="inline" />
     </div>
   );
 };

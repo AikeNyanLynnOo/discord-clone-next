@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { COUNTRIES } from "../shared/env";
 
@@ -9,7 +9,7 @@ export const NavBar = (props: any) => {
         className={`w-full px-10 lg:px-24 py-6 flex items-center justify-between `}
       >
         <Link href="/" className="flex items-center w-1/4 justify-start">
-          <Image
+          <img
             src="/images/discord-transparent.png"
             alt="discord-transparent"
             className="inline mr-4 w-8 h-8"
@@ -17,7 +17,7 @@ export const NavBar = (props: any) => {
           <h1 className="x-large-font inline">Discord</h1>
         </Link>
         <div className="flex">
-          <Image
+          <img
             src="/images/menu_blue.png"
             alt="menu_blue"
             className="h-5 w-5 block md:hidden cursor-pointer"
@@ -36,7 +36,7 @@ export const NavBar = (props: any) => {
             >
               <Link href={"#"} className="flex items-center">
                 {COUNTRIES[props.selectedCountry]}{" "}
-                <Image
+                <img
                   src="/images/caret-d-blue.png"
                   alt="caret-d-blue"
                   className="h-2 w-2 ml-3"
@@ -87,7 +87,7 @@ export const NavBar = (props: any) => {
             >
               <Link href={"#"} className="flex items-center w-fit mx-auto">
                 {COUNTRIES[props.selectedCountry]}{" "}
-                <Image
+                <img
                   src="/images/caret-d-blue.png"
                   alt="caret-d-blue"
                   className="h-2 w-2 ml-3"

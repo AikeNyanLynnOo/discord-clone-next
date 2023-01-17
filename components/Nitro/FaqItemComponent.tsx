@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 export const FaqItem = ({
   index,
   faq,
@@ -37,7 +37,7 @@ export const FaqItem = ({
         >
           {faq.question}
         </span>
-        <Image
+        <img
           src={`/images/${isOpened ? "plus_white" : "plus_black"}.png`}
           alt={`toggle_btn`}
           className={`h-5 transition duration-300 ${

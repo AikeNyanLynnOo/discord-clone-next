@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import HeroStyles from "../../styles/HeroSection.module.css";
 
 export const HeroSection = () => {
@@ -14,12 +14,12 @@ export const HeroSection = () => {
           From gaming, to music, to learning, there&apos;s a place for you.
         </p>
       </div>
-      <Image
+      <img
         src="/images/servers_herobg2.svg"
         alt="servers_herobg2"
         className={`hidden md:block absolute bottom-0 left-0 z-0 ${HeroStyles.servers_bg_2}`}
       />
-      <Image
+      <img
         src="/images/servers_herobg3.svg"
         alt="servers_herobg3"
         className={`hidden md:block absolute bottom-0 right-0 z-0 ${HeroStyles.servers_bg_3}`}

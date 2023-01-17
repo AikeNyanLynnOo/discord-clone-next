@@ -755,11 +755,11 @@ export const CAREER_EXP_DATA: TitleImgBody[] = [
 ];
 
 export const CAREER_FOOTER_IMAGES = [
+  "career_footer_carousel0.jpeg",
   "career_footer_carousel1.jpeg",
   "career_footer_carousel2.jpeg",
   "career_footer_carousel3.jpeg",
   "career_footer_carousel4.jpeg",
   "career_footer_carousel5.jpeg",
   "career_footer_carousel6.jpeg",
-  "career_footer_carousel7.jpeg",
 ];

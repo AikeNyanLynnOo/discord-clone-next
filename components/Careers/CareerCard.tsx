@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 export const CareerCard = ({
   title,
   workLocation,
@@ -15,7 +15,7 @@ export const CareerCard = ({
       </h1>
       <div className="flex justify-between items-center">
         <span className="large-font text-sm font-light">{workLocation}</span>
-        <Image
+        <img
           src={`/images/${icon}`}
           alt="discord_opportunity"
           className="h-8 w-8 ml-5"

@@ -58,7 +58,7 @@ export const HeroSection = () => {
           dragElastic={0.5}
           src="/images/careers_hero4.jpeg"
           className={`rounded-3xl ${HeroStyles.careers_hero_4}`}
-          />
+        />
         <motion.img
           variants={containerVariants}
           drag

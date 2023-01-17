@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export const SupportCard = ({
   image,
@@ -11,7 +11,7 @@ export const SupportCard = ({
 }) => {
   return (
     <div className="hover:-translate-y-2 my-3 mx-2 py-10 cursor-pointer h-auto md:h-60 flex flex-col justify-center px-5 text-center shadow-lg w-11/12 md:w-52">
-      <Image
+      <img
         src={`/images/${image}`}
         alt={`${image}`}
         className="w-1/3 mx-auto"
