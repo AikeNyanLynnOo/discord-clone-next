@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { COUNTRIES } from "../shared/env";
 
@@ -8,17 +9,19 @@ export const NavBar = (props: any) => {
         className={`w-full px-10 lg:px-24 py-6 flex items-center justify-between `}
       >
         <Link href="/" className="flex items-center w-1/4 justify-start">
-          <img
+          <Image
             src="/images/discord-transparent.png"
+            alt="discord-transparent"
             className="inline mr-4 w-8 h-8"
           />
           <h1 className="x-large-font inline">Discord</h1>
         </Link>
         <div className="flex">
-          <img
+          <Image
             src="/images/menu_blue.png"
+            alt="menu_blue"
             className="h-5 w-5 block md:hidden cursor-pointer"
-            onClick={()=>props.toggleNav()}
+            onClick={() => props.toggleNav()}
           />
           <ul className="text-sm font-light hidden md:flex">
             <li className="hover:underline mx-4">
@@ -33,7 +36,11 @@ export const NavBar = (props: any) => {
             >
               <Link href={"#"} className="flex items-center">
                 {COUNTRIES[props.selectedCountry]}{" "}
-                <img src="/images/caret-d-blue.png" className="h-2 w-2 ml-3" />
+                <Image
+                  src="/images/caret-d-blue.png"
+                  alt="caret-d-blue"
+                  className="h-2 w-2 ml-3"
+                />
               </Link>
               {props.isNavSelectOpen && (
                 <ul className="absolute top-10 max-h-[calc(100vh-_100px)] overflow-y-scroll scrollbar-hide px-5 w-36 py-3 bg-white rounded-md border text-black">
@@ -80,7 +87,11 @@ export const NavBar = (props: any) => {
             >
               <Link href={"#"} className="flex items-center w-fit mx-auto">
                 {COUNTRIES[props.selectedCountry]}{" "}
-                <img src="/images/caret-d-blue.png" className="h-2 w-2 ml-3" />
+                <Image
+                  src="/images/caret-d-blue.png"
+                  alt="caret-d-blue"
+                  className="h-2 w-2 ml-3"
+                />
               </Link>
               {props.isNavSelectOpen && (
                 <ul className="absolute top-10 max-h-[calc(100vh-_100px)] overflow-y-scroll scrollbar-hide px-5 w-full py-3 bg-white rounded-md border text-black mx-auto">

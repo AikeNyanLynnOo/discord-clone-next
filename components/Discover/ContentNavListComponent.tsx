@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import {
   SERVERS_CONTENT_NAV_ITEMS,
   SERVERS_NAVITEM_CONTENTS,
@@ -19,7 +19,7 @@ export const ContentNavList = ({
               (item) => item.navLink === navLink
             )[0].text}
         </span>
-        <img src="/images/caret-r.png" className="h-3 w-3 rotate-90" />
+        <Image src="/images/caret-r.png" alt="caret-r" className="h-3 w-3 rotate-90" />
       </div>
 
       <ul className="w-1/3 mr-3 hidden md:block">
@@ -31,8 +31,9 @@ export const ContentNavList = ({
               }`}
             >
               <div>
-                <img
+                <Image
                   src={`/images/${item.image}`}
+                  alt={`${item.image}`}
                   className="inline-block h-4 w-4 mr-3"
                 />
                 <span>{item.text}</span>
@@ -60,14 +61,16 @@ export const ContentNavList = ({
               className="block md:grid grid-cols-2 gap-x-4 my-6 p-0 md:p-2 hover:bg-[#DBDEE1] rounded-lg cursor-pointer"
               key={index}
             >
-              <img
+              <Image
                 src={`/images/${content.imgLg}`}
+                alt={`${content.imgLg}`}
                 className="rounded-lg hidden md:block"
               />
               <div className="hidden md:block">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src={`/images/${content.imgSm}`}
+                    alt={`${content.imgSm}`}
                     className="inline-block h-6 w-6 mr-2 rounded-lg"
                   />
                   <span className="large-font font-bold">{content.title}</span>
@@ -84,8 +87,9 @@ export const ContentNavList = ({
 
               <div className="flex md:hidden">
                 <div className="flex w-full">
-                  <img
+                  <Image
                     src={`/images/${content.imgSm}`}
+                    alt={`${content.imgSm}`}
                     className="inline-block h-10 w-10 mr-4 rounded-lg"
                   />
                   <div>

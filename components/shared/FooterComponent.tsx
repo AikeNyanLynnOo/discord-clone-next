@@ -1,8 +1,14 @@
 import Link from "next/link";
-import { COUNTRIES,PRODUCT_LINKS,COMPANY_LINKS,RESOURCE_LINKS, POLICY_LINKS } from "./env";
+import Image from "next/image";
+import {
+  COUNTRIES,
+  PRODUCT_LINKS,
+  COMPANY_LINKS,
+  RESOURCE_LINKS,
+  POLICY_LINKS,
+} from "./env";
 
 export const Footer = (props: any) => {
-
   return (
     <footer className="bg-[#23272A] w-100">
       <div className="footer-wrapper py-0 md:py-10 ">
@@ -17,12 +23,17 @@ export const Footer = (props: any) => {
                 className="text-white rounded-lg h-8 w-fit flex items-center cursor-pointer select-none"
                 onClick={() => props.toggleSelectBox()}
               >
-                <img
+                <Image
                   src={`/images/countries/${props.selectedCountry + 1}.png`}
+                  alt="country"
                   className="inline mr-4 w-6 h-5"
                 />
                 {COUNTRIES[props.selectedCountry]}
-                <img src="/images/caret-d.png" className="inline ml-3 w-2 h-2" />
+                <Image
+                  src="/images/caret-d.png"
+                  alt="caret-d"
+                  className="inline ml-3 w-2 h-2"
+                />
               </div>
               <ul
                 className={`${
@@ -36,8 +47,9 @@ export const Footer = (props: any) => {
                     onClick={() => props.setSelectedCountry(index)}
                     className="py-2 px-2 hover:bg-gray-200 rounded-lg cursor-pointer"
                   >
-                    <img
+                    <Image
                       src={`/images/countries/${index + 1}.png`}
+                      alt="country"
                       className="inline mr-4 w-6 h-5"
                     />
                     {country}
@@ -48,26 +60,30 @@ export const Footer = (props: any) => {
 
             <div className="flex items-center mt-5">
               <Link href="https://twitter.com/">
-                <img
+                <Image
                   src={`/images/twitter.png`}
+                  alt="twitter"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.instagram.com/">
-                <img
+                <Image
                   src={`/images/instagram.png`}
+                  alt="instagram"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.facebook.com/">
-                <img
+                <Image
                   src={`/images/facebook.png`}
+                  alt="facebook"
                   className="inline mr-8 w-6 h-6"
                 />
               </Link>
               <Link href="https://www.youtube.com/">
-                <img
+                <Image
                   src={`/images/youtube.png`}
+                  alt="youtube"
                   className="inline w-6 h-6 mt-2"
                 />
               </Link>
@@ -136,7 +152,11 @@ export const Footer = (props: any) => {
 
         <div className="flex justify-between px-10 md:px-20 py-10">
           <Link href="/">
-            <img src="/images/discord.png" className="inline mr-4 w-8 h-8" />
+            <Image
+              src="/images/discord.png"
+              alt="discord"
+              className="inline mr-4 w-8 h-8"
+            />
             <h1 className="x-large-font inline text-white">Discord</h1>
           </Link>
           <button className="px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">

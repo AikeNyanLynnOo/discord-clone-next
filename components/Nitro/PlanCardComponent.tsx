@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { NitroPlan } from "../shared/Types";
 
 export const PlanCard = (props: { plans: NitroPlan[] }) => {
@@ -13,34 +15,41 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
           </span>
 
           <div className="flex-1 text-center px-5 py-6">
-            <img
+            <Image
               src={`/images/nitro_basic_black.svg`}
+              alt="nitro_basic_black"
               className="w-12 md:w-20 inline-block"
             />
           </div>
           <div className="relative flex-1 text-center px-5 py-6 border-x-2 border-t-2 border-[#B845C1] rounded-t-2xl">
-            <img
+            <Image
               src={`/images/nitro_black.svg`}
+              alt="nitro_black"
               className="w-12 md:w-20 inline"
             />
 
-            <img
+            <Image
               src={`/images/most_popular.svg`}
-              className="hidden md:block w-24 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 inline-block"
+              alt="most_popular"
+              className="hidden md:block w-24 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2"
             />
           </div>
         </div>
-        {props.plans.map((plan,index) => {
+        {props.plans.map((plan, index) => {
           return (
-            <div key={index} className="flex justify-between items-center w-11/12 mx-auto border-b border-[#ddd]">
+            <div
+              key={index}
+              className="flex justify-between items-center w-11/12 mx-auto border-b border-[#ddd]"
+            >
               <span className="w-1/3 lg:w-2/3 text-left font-light text-sm md:text-md max-h-14 overflow-y-scroll scrollbar-hide">
                 {plan.textContent}
               </span>
 
               <div className="flex-1 text-center px-5 py-6">
                 {(plan.basic.includes(".svg") && (
-                  <img
+                  <Image
                     src={`/images/${plan.basic}`}
+                    alt={`${plan.basic}`}
                     className="h-3 w-3 md:h-6 md:w-6 inline-block"
                   />
                 )) || (
@@ -51,8 +60,9 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
               </div>
               <div className="flex-1 text-center py-6 px-5 border-x-2 border-[#B845C1]">
                 {(plan.special.includes(".svg") && (
-                  <img
+                  <Image
                     src={`/images/${plan.special}`}
+                    alt={`${plan.special}`}
                     className="h-3 w-3 md:h-6 md:w-6 inline-block"
                   />
                 )) || (
@@ -69,30 +79,38 @@ export const PlanCard = (props: { plans: NitroPlan[] }) => {
           <span className="w-1/3 lg:w-2/3"></span>
 
           <div className="flex-1 text-center py-6">
-            <button className="block mx-auto text-sm px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
+            <button className=" mx-auto px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
               Subscribe Basic
             </button>
           </div>
           <div className="relative flex-1 text-center py-6 border-x-2 border-b-2 border-[#B845C1] rounded-b-2xl">
-            <button className="block mx-auto text-sm px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
+            <button className=" mx-auto px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
               Subscribe Nitro
             </button>
           </div>
         </div>
         <div className="grid grid-cols-2 grid-gap-4 w-11/12 mx-auto pt-10 md:hidden">
           <div className="pt-5">
-            <img src={`/images/nitro_basic_black.svg`} className="w-24" />
+            <Image
+              src={`/images/nitro_basic_black.svg`}
+              alt="nitro_basic_black"
+              className="w-24"
+            />
           </div>
           <div className="pt-5">
-            <button className="block mx-auto text-sm px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full w-full">
+            <button className="block mx-auto px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full w-full">
               Subscribe Basic
             </button>
           </div>
           <div className="pt-5">
-            <img src={`/images/nitro_black.svg`} className="w-24" />
+            <Image
+              src={`/images/nitro_black.svg`}
+              alt="nitro_black"
+              className="w-24"
+            />
           </div>
           <div className="pt-5">
-            <button className="block mx-auto text-sm px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full w-full">
+            <button className="block mx-auto px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full w-full">
               Subscribe Nitro
             </button>
           </div>

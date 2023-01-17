@@ -9,7 +9,7 @@ export const WorkCategories = () => {
     <div className="bg-[#F6F6F6] w-full">
       <div className="w-full mx-auto md:w-11/12 py-20 px-10">
         <h2 className="text-[#23272A] font-bold large-font text-xl sm:text-2xl md:text-4xl mb-5">
-          We'd love to work with someone like you.
+          We&apos;d love to work with someone like you.
         </h2>
         <motion.h3
           variants={containerVariants}

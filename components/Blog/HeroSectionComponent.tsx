@@ -1,11 +1,15 @@
 import HeroStyles from "../../styles/HeroSection.module.css";
+import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <div className={`bg-[#404EED] sm:bg-transparent ${HeroStyles.blog_hero} relative`}>
+    <div
+      className={`bg-[#404EED] sm:bg-transparent ${HeroStyles.blog_hero} relative`}
+    >
       <div className={`bg-[#404EED] h-2/3 hidden sm:block`}></div>
-      <img
+      <Image
         src="/images/blog_hero.png"
+        alt="blog_hero"
         className="hidden sm:block rounded-lg w-11/12 h-2/12 absolute top-24 left-1/2 -translate-x-1/2"
       />
       <div

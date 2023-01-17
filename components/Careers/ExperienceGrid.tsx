@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CAREER_EXP_DATA } from "../shared/env";
 import { motion } from "framer-motion";
 import { containerVariants } from "./MotionVariants";
@@ -16,7 +17,7 @@ export const ExperienceGrid = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-14">
         {CAREER_EXP_DATA.map((data, index) => (
           <div className="my-5" key={index}>
-            <img src={`/images/${data.image}`} className="h-9 w-9" />
+            <Image src={`/images/${data.image}`} alt={`${data.image}`} className="h-9 w-9" />
             <h4 className="large-font py-4 text-white text-lg">{data.title}</h4>
             <p className="large-font text-white leading-7">{data.body}</p>
           </div>

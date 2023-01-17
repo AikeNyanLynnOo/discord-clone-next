@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { containerVariants } from "./MotionVariants";
 
@@ -24,12 +25,12 @@ export const MidContent = () => {
           Discord is working toward an inclusive world where no one feels like
           an outsider, where genuine human connection is a click, text chat, or
           voice call away. A place where everyone can find belonging.
-          Challenging? Heck yes. Rewarding? Double heck yes. It's a mission that
+          Challenging? Heck yes. Rewarding? Double heck yes. It&apos;s a mission that
           gives us the chance to positively impact millions of people all over
           the world.
         </p>
         <p>
-          So if this strikes a chord, and you're equally comfortable
+          So if this strikes a chord, and you&apos;re equally comfortable
           communicating in memes and gifs as you are in code or decks, come
           build belonging with us!
         </p>
@@ -52,11 +53,11 @@ export const MidContent = () => {
             viewport={{ once: true }}
             className="leading-8"
           >
-            Our people, much like our users, can't be put in a box. The quirky
+            Our people, much like our users, can&apos;t be put in a box. The quirky
             and unique cast of characters that work together at Discord may be
-            intrepid travelers from all walks of life, but there's a reason
-            we've all ended up here. We care about each other, the work we do,
-            and the future we're building — like, a lot. We pull our own weight
+            intrepid travelers from all walks of life, but there&apos;s a reason
+            we&apos;ve all ended up here. We care about each other, the work we do,
+            and the future we&apos;re building — like, a lot. We pull our own weight
             and treat each other with extreme empathy. No cogs or jerks allowed.
           </motion.p>
         </div>
@@ -86,8 +87,8 @@ export const MidContent = () => {
             viewport={{ once: true }}
             className="leading-8"
           >
-            Imagine a workplace where everyone belongs. At Discord, we aren't
-            just imagining this place, we're creating it. We're building an
+            Imagine a workplace where everyone belongs. At Discord, we aren&apos;t
+            just imagining this place, we&apos;re creating it. We&apos;re building an
             inclusive, diverse, and welcoming space that reflects the world we
             live, play, and work in — because we know that with diversity comes
             better ideas, a better product, a better work environment, and
@@ -118,8 +119,9 @@ export const MidContent = () => {
             more about the Life @ Discord experience!
           </motion.p>
         </div>
-        <img
+        <Image
           src="/images/careers_watchout.svg"
+          alt="career_watchout"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-3/4 w-full md:w-8/12"
         />
       </motion.div>

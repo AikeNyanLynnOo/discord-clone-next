@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { NitroCardContent } from "../shared/Types";
 export const Card = ({
   headerImg,
@@ -13,13 +14,14 @@ export const Card = ({
       className={`flex flex-col justify-between flex-1 card-${cardType} rounded-lg p-5 m-2.5`}
     >
       <div className="mb-3">
-        <img src={`/images/${headerImg}`} />
+        <Image src={`/images/${headerImg}`} alt={`${headerImg}`} />
         <ul className="text-white py-3 text-lg font-light">
           {cardContents.map((cardContent, index) => {
             return (
               <li key={index} className="flex items-center py-2">
-                <img
+                <Image
                   src={`/images/${cardContent.imgSrc}`}
+                  alt={`${cardContent.imgSrc}`}
                   className="h-5 w-5"
                 />
                 <p className="ml-2">{cardContent.textContent}</p>

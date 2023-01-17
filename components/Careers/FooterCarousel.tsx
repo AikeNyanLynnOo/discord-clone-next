@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { useEffect, useState } from "react";
 import { CAREER_FOOTER_IMAGES } from "../shared/env";
 import { motion } from "framer-motion";
@@ -32,11 +34,11 @@ export const FooterCarousel = () => {
   return (
     <div className="bg-[#2C2F33] py-20">
       <p className="text-center w-10/12 mx-auto py-4 large-font text-white">
-        If you're wanting to work with a motivated team on something that gives
+        If you&apos;re wanting to work with a motivated team on something that gives
         millions of users a space to find belonging, check out the four values
-        of working at Discord on our blog. For all roles, we're hiring people to
+        of working at Discord on our blog. For all roles, we&apos;re hiring people to
         join us in our beautiful San Francisco office (when it reopens), and for
-        select, indicated positions, we're currently open to having people join
+        select, indicated positions, we&apos;re currently open to having people join
         our team remotely in these states:
       </p>
       <p className="text-center w-10/12 mx-auto py-4 large-font text-white">
@@ -54,10 +56,11 @@ export const FooterCarousel = () => {
           className="flex w-full overflow-x-hidden scroll-smooth"
         >
           {CAREER_FOOTER_IMAGES.map((img, index) => (
-            <img
+            <Image
               id={`footer_img${index}`}
               key={index}
               src={`/images/${img}`}
+              alt={`${img}`}
               className="w-full md:min-w-1/2 sm:h-64 md:h-80 rounded-3xl mr-5"
             />
           ))}
@@ -86,7 +89,7 @@ export const FooterCarousel = () => {
           }}
           className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] left-10 top-1/2 -translate-y-1/2"
         >
-          <img src="/images/caret-l.png" className="w-1/3 mx-auto" />
+          <Image src="/images/caret-l.png" alt="caret-l" className="w-1/3 mx-auto" />
         </button>
         <button
           onClick={() => {
@@ -110,7 +113,7 @@ export const FooterCarousel = () => {
           }}
           className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] right-10 top-1/2 -translate-y-1/2"
         >
-          <img src="/images/caret-r.png" className="w-1/3 mx-auto" />
+          <Image src="/images/caret-r.png" alt="caret-r" className="w-1/3 mx-auto" />
         </button>
       </div>
     </div>

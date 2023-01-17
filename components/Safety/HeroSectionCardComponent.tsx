@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const HeroSectionCard = ({
   content,
 }: {
@@ -9,7 +10,11 @@ export const HeroSectionCard = ({
       <p className="text-sm leading-6 py-3">{content.text}</p>
       <div>
         <span className="text-sm font-bold">Learn more</span>
-        <img src="/images/arrow_right.svg" className="inline ml-3"/>
+        <Image
+          src="/images/arrow_right.svg"
+          alt="arrow_right"
+          className="inline ml-3"
+        />
       </div>
     </div>
   );

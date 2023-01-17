@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const FaqItem = ({
   index,
   faq,
@@ -21,7 +22,7 @@ export const FaqItem = ({
       } `}
       onClick={() => {
         if (openedFaq === index) {
-        //   console.log("Toggling");
+          //   console.log("Toggling");
           setOpenedFaq(null);
           return;
         }
@@ -36,8 +37,9 @@ export const FaqItem = ({
         >
           {faq.question}
         </span>
-        <img
+        <Image
           src={`/images/${isOpened ? "plus_white" : "plus_black"}.png`}
+          alt={`toggle_btn`}
           className={`h-5 transition duration-300 ${
             isOpened ? "rotate-45" : "rotate-180"
           }`}

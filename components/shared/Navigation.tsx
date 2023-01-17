@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -7,7 +8,11 @@ const ButtonGroup = () => {
   return (
     <div className="absolute bottom-6 z-20 flex justify-between items-center w-fit">
       <button className="px-5 py-2 text-white text-sm bg-[#5865f2] rounded-full flex items-center">
-        <img src="/images/download-white.png" className=" w-4 h-4 mr-3" />
+        <Image
+          src="/images/download-white.png"
+          alt="download-white"
+          className=" w-4 h-4 mr-3"
+        />
         Download for Linux
       </button>
       <button className="border-solid border border-[#5865f2] rounded-full ml-2 px-7 py-2 text-sm normal-font text-[#5865f2] block sm:hidden">
@@ -51,7 +56,11 @@ export const Navigation = (props: any) => {
         className={`nav-${props.currentNav} w-full px-10 lg:px-24 py-6 flex items-center justify-between fixed top-0 z-20`}
       >
         <Link href="/" className="flex items-center w-1/4 justify-start">
-          <img src="/images/discord.png" className="inline mr-4 w-8 h-8" />
+          <Image
+            src="/images/discord.png"
+            alt="discord"
+            className="inline mr-4 w-8 h-8"
+          />
           <h1 className="x-large-font inline text-white">Discord</h1>
         </Link>
         <ul className="normal-font w-2/4 hidden lg:flex justify-between items-center text-white font-semibold">
@@ -65,8 +74,9 @@ export const Navigation = (props: any) => {
           <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
             Login
           </button>
-          <img
+          <Image
             src="/images/lines.png"
+            alt="lines"
             className="inline lg:hidden ml-4 w-7 h-7 cursor-pointer"
             onClick={() => {
               toggleSlideNav();
@@ -82,8 +92,9 @@ export const Navigation = (props: any) => {
         <div className="flex justify-between mx-6">
           <div className="w-11/12 ">
             <Link href="/" className="border-b py-6 flex items-center">
-              <img
+              <Image
                 src="/images/discord-black.png"
+                alt="discord-black"
                 className="inline mr-4 w-8 h-8"
               />
               <h1 className="x-large-font inline text-[#23272a]">Discord</h1>
@@ -113,8 +124,9 @@ export const Navigation = (props: any) => {
                       >
                         {navItem.text}
                         {navItem.subNav && (
-                          <img
+                          <Image
                             src="/images/caret-r.png"
+                            alt="caret-r"
                             className="inline w-3 h-3 ml-3"
                           />
                         )}
@@ -126,8 +138,9 @@ export const Navigation = (props: any) => {
             </ul>
             <ButtonGroup />
           </div>
-          <img
+          <Image
             src="/images/close.png"
+            alt="close"
             className="w-4 h-4 mt-7 cursor-pointer"
             onClick={closeAll}
           />
@@ -146,8 +159,9 @@ export const Navigation = (props: any) => {
                   toggleSlideNav(true);
                 }}
               >
-                <img
+                <Image
                   src="/images/caret-l.png"
+                  alt="caret-l"
                   className="inline mr-2 w-3 h-3"
                 />
                 <h1 className="inline font-light text-sm py-3 my-2 rounded-md hover:underline">
@@ -191,8 +205,9 @@ export const Navigation = (props: any) => {
               </ul>
               <ButtonGroup />
             </div>
-            <img
+            <Image
               src="/images/close.png"
+              alt="close"
               className="w-4 h-4 mt-7 cursor-pointer"
               onClick={closeAll}
             />
