@@ -69,7 +69,6 @@ export const CareerInfoCard = () => {
             </motion.p>
           </div>
         </div>
-        {activeInfo}
         <div className="relative my-14 w-full lg:w-9/12 mx-auto bg-white rounded-2xl">
           <button
             onClick={() => {
@@ -96,7 +95,7 @@ export const CareerInfoCard = () => {
             className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] left-0 top-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             <img
-              src="/images/career_info_left_arrow.svg"
+              src="/images/career_info_left_arrow.png"
               alt="career_info_left_arrow"
               className="w-1/2 mx-auto"
             />
@@ -124,7 +123,7 @@ export const CareerInfoCard = () => {
             className="bg-[#EFEFEF] absolute rounded-full h-12 w-12 text-center border border-[#ccc5c5] right-0 top-1/2 translate-x-1/2 -translate-y-1/2"
           >
             <img
-              src="/images/career_info_right_arrow.svg"
+              src="/images/career_info_right_arrow.png"
               alt="career_info_right_arrow"
               className="w-1/2 mx-auto"
             />

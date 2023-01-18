@@ -105,7 +105,7 @@ export const MidContent = () => {
         />
       </div>
       <motion.div className="text-center relative py-20">
-        <div className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-8/12">
+        <div className="absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-8/12">
           <h3 className="text-[#23272A] z-10 font-bold large-font text-xl sm:text-2xl md:text-3xl mb-6">
             Want to find out more?
           </h3>
