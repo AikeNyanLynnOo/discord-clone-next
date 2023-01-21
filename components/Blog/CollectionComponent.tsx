@@ -23,7 +23,7 @@ export const Collection = () => {
       <div className="w-full md:w-7/12">
         <div className="mb-5">
           <img
-            src="/images/blog_carditem_top.svg"
+            src="/images/blog_carditem_top.png"
             alt="cardItemTop"
             className="w-full"
           />
