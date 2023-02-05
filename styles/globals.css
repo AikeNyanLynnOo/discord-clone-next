@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fonts */
+@font-face {
+  font-family: "X Large Font"; /*Can be any text*/
+  src: local("xlargefont"),
+    url("../public/fonts/xlargefont.woff2") format("woff");
+}
+@font-face {
+  font-family: "Large Font"; /*Can be any text*/
+  src: local("largefont"),
+    url("../public/fonts/largefont.woff2") format("woff");
+}
+@font-face {
+  font-family: "Normal Font"; /*Can be any text*/
+  src: local("normalfont"),
+    url("../public/fonts/normalfont.woff2") format("woff");
+}
+
 /* navigation */
 
 .nav-home {
@@ -20,7 +37,7 @@
   background-color: #404eed;
 }
 .nav-careers {
-  background-color: #5865F2;
+  background-color: #5865f2;
 }
 
 /* nitro */
@@ -32,15 +49,15 @@
 }
 
 .x-large-font {
-  font-family: "Sigmar One", cursive;
+  font-family: "X Large Font", sans-serif;
 }
 
 .large-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Large Font", sans-serif;
 }
 
 .normal-font {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Normal Font", sans-serif;
 }
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
@@ -163,17 +180,17 @@
 
 /* Track */
 .sm-scrollbar::-webkit-scrollbar-track {
-  background: #f6f6f6; 
+  background: #f6f6f6;
 }
- 
+
 /* Handle */
 .sm-scrollbar::-webkit-scrollbar-thumb {
-  background: rgb(199, 196, 196); 
+  background: rgb(199, 196, 196);
 }
 
 /* Handle on hover */
 .sm-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 @media only screen and (max-width: 767px) {
