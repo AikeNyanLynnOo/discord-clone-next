@@ -5,16 +5,16 @@ export const HeroSection = () => {
   return (
     <div className={`w-100 ${HeroStyles.height} bg-[#404EED] relative top-20`}>
       <div className="py-14 sm:py-16 lg:py-20 absolute top-0 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-10 w-full">
-        <h1 className="x-large-font font-light text-white w-full md:w-3/4 lg:w-3/4 mx-0 px-10 lg:mx-auto lg:px-0 text-4xl sm:text-5xl md:text-6xl text-left lg:text-center">
+        <h1 className="x-large-font font-light text-white w-full md:w-3/4 lg:w-3/4 mx-0 px-10 lg:mx-auto lg:px-0 text-2xl sm:text-5xl md:text-6xl text-left lg:text-center">
           IMAGINE A PLACE...
         </h1>
-        <p className="normal-font text-lg text-white leading-8 py-7 text-left lg:text-center w-full lg:w-7/12 mx-0 px-10 lg:mx-auto lg:px-0">
+        <p className="normal-font text-lg text-white leading-8 py-7 text-left lg:text-center w-full sm:w-7/12 mx-0 px-10 lg:mx-auto lg:px-0">
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community. Where just you and a handful of friends can
           spend time together. A place that makes it easy to talk every day and
           hang out more often.
         </p>
-        <div className="block md:flex justify-center w-full lg:w-9/12 mx-0 px-10 lg:mx-auto lg:px-0">
+        <div className="hidden sm:block md:flex justify-center w-full lg:w-9/12 mx-0 px-10 lg:mx-auto lg:px-0">
           <button className="px-7 py-4 bg-white text-lg rounded-full flex items-center xs:text-base sm:text-sm md:text-lg">
             <img
               src="/images/download-black.png"

@@ -80,6 +80,9 @@
   .careers_hero_4 {
     width: 80%;
   }
+  .height {
+    height: 680px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .hero1_bg {
@@ -115,6 +118,14 @@
   .careers_hero_4 {
     margin-right: 10px;
   }
+  .height {
+    height: 800px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .height {
+    height: 600px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hero2_bg {
@@ -133,6 +144,23 @@
 @media only screen and (min-width: 768px) {
   .hero3_bg {
     display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero1_bg {
+    bottom: 50px;
+  }
+  .height {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .hero1_bg {
+    bottom: 20px;
+  }
+  .height {
+    height: 700px;
   }
 }
 
