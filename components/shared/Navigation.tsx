@@ -15,9 +15,11 @@ const ButtonGroup = () => {
         />
         Download for Linux
       </button>
-      <button className="border-solid border border-[#5865f2] rounded-full ml-2 px-7 py-2 text-sm normal-font text-[#5865f2] block sm:hidden">
-        Login
-      </button>
+      <a href="https://discord.com/login">
+        <button className="border-solid border border-[#5865f2] rounded-full ml-2 px-7 py-2 text-sm normal-font text-[#5865f2] block sm:hidden">
+          Login
+        </button>
+      </a>
     </div>
   );
 };
@@ -71,9 +73,11 @@ export const Navigation = (props: any) => {
           ))}
         </ul>
         <div className="flex items-center w-1/4 justify-end">
-          <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
-            Login
-          </button>
+          <a href="https://discord.com/login">
+            <button className="hidden sm:block bg-white rounded-full px-4 py-1.5 text-sm normal-font text-black">
+              Login
+            </button>
+          </a>
           <img
             src="/images/lines.png"
             alt="lines"
